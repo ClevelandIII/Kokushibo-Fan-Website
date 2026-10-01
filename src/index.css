@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "comic";
+    src: url("assets/AnimeAce20BbItalic-vlA.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@theme {
+    --font-comic: "comic", "serif";
+    --color-koku-purple: #76418c;
+    --color-koku-ptrans: #75418ce3;
+    --color-koku-dark-purple: #371645;
+    --color-koku-dark-ptrans: #3716457e;
+    --color-koku-red: #de2220;
+    --color-koku-middle-red: #b2414e;
+    --color-koku-dark-red: #200b0d;
+    --color-koku-yellow: #faad46;
+}
+
+* {
+    line-height: 1.5;
+}
+
+th,
+td {
+    padding: 0.5rem;
+}
+
+td {
+    font-size: small;
+    border: black solid 3px;
+}
+
+td p {
+    font-size: small;
+}
+
+P {
+    font-size: medium;
+}
+
+.close {
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+#header-2 th {
+    color: #76418c;
+    border: black solid 3px;
+}
+
+ol li {
+    transition: background-color 0.5s;
+}
+
+ol li:hover {
+    background-color: #371645;
+}
+
+a {
+    cursor: pointer;
+}
+
+small {
+    color: #200b0d;
+}
+
+#header th {
+    border: #371645 solid 3px;
+}
+
+h2 {
+    color: #371645;
+}
+
+#Gallery_content img {
+    background-color: #371645;
+}
+
+li {
+    padding: var(--spacing);
+}
