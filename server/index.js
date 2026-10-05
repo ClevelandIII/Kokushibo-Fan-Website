@@ -25,12 +25,7 @@ const UserSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    email: {
-        type: String,
-        required: true,
-        unique: true,
-    },
-    comment: {
+    text: {
         type: String,
         required: true,
     },
@@ -57,7 +52,7 @@ app.post("/register", async (req, resp) => {
     try {
         const user = new User(req.body);
         let result = await user.save();
-        
+
         if (result) {
             delete result.password; // Ensure you're not sending sensitive info
             resp.status(201).send(result); // Send successful response
@@ -69,6 +64,18 @@ app.post("/register", async (req, resp) => {
         resp.status(500).send({
             message: "Something went wrong",
             error: e.message,
+        });
+    }
+});
+
+//Get comments
+app.get('/register', async (req, res) => {
+    try {
+        const user = await User.find();
+        res.json(user);
+    } catch (err) {
+        res.status(500).json({
+            message: err.message
         });
     }
 });

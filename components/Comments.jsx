@@ -1,16 +1,32 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 export default function Comments() {
     const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [comment, setComment] = useState("");
+    const [text, setText] = useState("");
+
+    const [comments, setComments] = useState([]);
+    const [updateComments, setUpdateComments] = useState(true);
+
+    const apiUrl = "http://localhost:5050";
+
+    useEffect(() => {
+        axios
+            .get(`${apiUrl}/register`)
+            .then((response) => {
+                setComments(response.data);
+            })
+            .catch((error) => {
+                console.error("Error fetching posts:", error);
+            });
+    }, [updateComments == false]);
 
     const handleOnSubmit = async (e) => {
         e.preventDefault();
 
-        let result = await fetch("http://localhost:5050/register", {
+        let result = await fetch(`${apiUrl}/register`, {
             method: "post",
-            body: JSON.stringify({ name, email, comment }),
+            body: JSON.stringify({ name, text }),
             headers: {
                 "Content-Type": "application/json",
             },
@@ -21,38 +37,62 @@ export default function Comments() {
 
         if (result) {
             alert("Data saved successfully");
-            setEmail("");
             setName("");
-            setComment("");
+            setText("");
+            setUpdateComments((prev) => (prev = false));
         }
     };
 
     return (
         <>
-            <h1>This is React WebApp </h1>
-            <form action="">
-                <input
-                    type="text"
-                    placeholder="name"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                />
-                <input
-                    type="email"
-                    placeholder="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                />
-                <input
-                    type="text"
-                    placeholder="comment"
-                    value={comment}
-                    onChange={(e) => setComment(e.target.value)}
-                />
-                <button type="submit" onClick={handleOnSubmit}>
-                    submit
-                </button>
-            </form>
+            <div className="w-10/12 m-auto flex gap-6 pt-6">
+                <section className="bg-koku-ptrans border-3 border-black w-4/5 p-5 grid grid-cols-1 gap-2">
+                    <h2 className="text-xl font-comic">
+                        {comments.length} Comments
+                    </h2>
+                    <hr className=" border-2 text-black" />
+                    <form action="">
+                        <div className="bg-koku-dark-purple border-3 p-5 text-white border-black grid grid-cols-1 gap-2">
+                            <label htmlFor="name">Username</label>
+                            <input
+                                type="text"
+                                placeholder="Enter username..."
+                                value={name}
+                                onChange={(e) => setName(e.target.value)}
+                                className=""
+                            />
+
+                            <label htmlFor="text">
+                                What do you want to say?
+                            </label>
+                            <textarea
+                                type="text"
+                                placeholder="Enter comment..."
+                                value={text}
+                                onChange={(e) => setText(e.target.value)}
+                            ></textarea>
+
+                            <button
+                                type="submit"
+                                onClick={handleOnSubmit}
+                                className="border-black bg-koku-ptrans border-3 w-1/12 m-auto"
+                            >
+                                Post
+                            </button>
+                        </div>
+                    </form>
+
+                    {comments.map((comment) => (
+                        <div className="bg-koku-dark-purple border-3 p-5 text-white border-black grid grid-cols-1 gap-2">
+                            <h3 className="text-lg font-comic">
+                                {comment.name}
+                            </h3>
+                            <p>{comment.text}</p>
+                        </div>
+                    ))}
+                </section>
+                <section className="w-1/5"></section>
+            </div>
         </>
     );
 }
