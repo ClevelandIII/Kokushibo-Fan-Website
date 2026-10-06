@@ -12,7 +12,7 @@ export default function Comments() {
     //const apiUrl = "http://localhost:5050";
 
     //deployment url
-    const apiUrl = "https://kokushibo-fan-website.onrender.com"
+    const apiUrl = process.env.VITE_URL;
 
     useEffect(() => {
         axios
@@ -20,7 +20,6 @@ export default function Comments() {
             .then((response) => {
                 setComments(response.data);
                 //console.log(response);
-                
             })
             .catch((error) => {
                 console.error("Error fetching posts:", error);
@@ -89,7 +88,10 @@ export default function Comments() {
                     </form>
 
                     {comments.map((comment) => (
-                        <div className="bg-koku-dark-purple border-3 p-5 text-white border-black grid grid-cols-1 gap-2" key={comment._id}>
+                        <div
+                            className="bg-koku-dark-purple border-3 p-5 text-white border-black grid grid-cols-1 gap-2"
+                            key={comment._id}
+                        >
                             <h3 className="text-lg font-comic">
                                 {comment.name}
                             </h3>
