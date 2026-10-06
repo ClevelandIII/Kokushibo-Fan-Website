@@ -8,9 +8,6 @@ export default function Comments() {
     const [comments, setComments] = useState([]);
     const [updateComments, setUpdateComments] = useState(true);
 
-    //local url
-    //const apiUrl = "http://localhost:5050";
-
     //deployment url
     const apiUrl = process.env.VITE_URL;
 

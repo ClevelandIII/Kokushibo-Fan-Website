@@ -4,13 +4,9 @@ import cors from "cors";
 
 const app = express();
 
-//const connection = import.meta.env.VITE_MONGODB_URI;
+
 const connection = process.env.VITE_MONGODB_URI;
-
-//const port = import.meta.env.VITE_PORT;
 const port = process.env.VITE_PORT;
-
-//const origin = "http://localhost:5173"
 const origin = "https://clevelandiii.github.io/Kokushibo-Fan-Website/"
 
 console.log(port != null ? "good!" : "bad");
