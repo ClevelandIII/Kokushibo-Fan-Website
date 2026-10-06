@@ -4,16 +4,16 @@ import cors from "cors";
 
 const app = express();
 
-let connection = import.meta.env.VITE_MONGODB_URI;
+let connection = process.env.VITE_MONGODB_URI;
 
 if (connection == null) {
-    connection = process.env.VITE_MONGODB_URI;
+    connection = import.meta.env.VITE_MONGODB_URI;
 }
 
-let port = import.meta.env.VITE_PORT;
+let port = process.env.VITE_PORT;
 
 if (port == null) {
-    port = process.env.VITE_PORT;
+    port = import.meta.env.VITE_PORT;
 }
 
 console.log(port != null ? "good!" : "bad");
