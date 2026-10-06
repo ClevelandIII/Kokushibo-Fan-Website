@@ -28,7 +28,7 @@ td {
     padding: 0.5rem;
 }
 
-td {
+tfoot td {
     font-size: small;
     border: black solid 3px;
 }
@@ -49,9 +49,11 @@ P {
     display: none;
 }
 
-#header-2 th {
+tbody tr td {
     color: #76418c;
     border: black solid 3px;
+    text-align: center;
+    font-weight: bold;
 }
 
 ol li {
@@ -70,7 +72,7 @@ small {
     color: #200b0d;
 }
 
-#header th {
+thead tr th {
     border: #371645 solid 3px;
 }
 

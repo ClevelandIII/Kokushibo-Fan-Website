@@ -106,135 +106,159 @@ export default function Main({ refs }) {
                 {/* Table Section */}
                 <section className="grid grid-cols-1 gap-y-2">
                     <table>
-                        <tr
-                            className="text-center bg-black text-lg"
-                            id="header"
-                        >
-                            <th colSpan={4}>Names</th>
-                            <th colSpan={3}>Affiliation</th>
-                        </tr>
-                        <tr className="bg-koku-dark-purple" id="header-2">
-                            <th>Kanji</th>
-                            <th>Rōmaji</th>
-                            <th>Alias</th>
-                            <th>Race</th>
-                            <th>Affiliation</th>
-                            <th>Occupation</th>
-                            <th>Combat Style</th>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p>黒死牟 (Demon)</p>
-                                <p>継国 巌勝 (Human)</p>
-                            </td>
-                            <td>Kokushibō</td>
-                            <td>
-                                <p>Michikatsu Tsugikuni (Human Name)</p>
-                                <p>Secretary Kokushibo (Kimetsu Academy)</p>
-                            </td>
-                            <td>
-                                <p>Demon</p>
-                                <p>Human (Formerly)</p>
-                            </td>
-                            <td>
-                                <p>Demon Slayer Corps (Formerly)</p>
-                                <p>Twelve Kizuki</p>
-                            </td>
-                            <td>
-                                <p>Samurai (Formerly)</p>
-                                <p>Demon Slayer (Formerly)</p>
-                            </td>
-                            <td>Moon Breathing</td>
-                        </tr>
+                        <thead className="text-center bg-black text-lg">
+                            <tr>
+                                <th colSpan={4}>Names</th>
+                                <th colSpan={3}>Affiliation</th>
+                            </tr>
+                        </thead>
+                        <tbody className="bg-koku-dark-purple" id="header-2">
+                            <tr>
+                                <td>Kanji</td>
+                                <td>Rōmaji</td>
+                                <td>Alias</td>
+                                <td>Race</td>
+                                <td>Affiliation</td>
+                                <td>Occupation</td>
+                                <td>Combat Style</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>
+                                    <p>黒死牟 (Demon)</p>
+                                    <p>継国 巌勝 (Human)</p>
+                                </td>
+                                <td>Kokushibō</td>
+                                <td>
+                                    <p>Michikatsu Tsugikuni (Human Name)</p>
+                                    <p>Secretary Kokushibo (Kimetsu Academy)</p>
+                                </td>
+                                <td>
+                                    <p>Demon</p>
+                                    <p>Human (Formerly)</p>
+                                </td>
+                                <td>
+                                    <p>Demon Slayer Corps (Formerly)</p>
+                                    <p>Twelve Kizuki</p>
+                                </td>
+                                <td>
+                                    <p>Samurai (Formerly)</p>
+                                    <p>Demon Slayer (Formerly)</p>
+                                </td>
+                                <td>Moon Breathing</td>
+                            </tr>
+                        </tfoot>
                     </table>
 
                     <table>
-                        <tr
+                        <thead
                             className="text-center bg-black text-lg"
                             id="header"
                         >
-                            <th colSpan={7}>Characteristics</th>
-                        </tr>
-                        <tr className="bg-koku-dark-purple" id="header-2">
-                            <th>Race</th>
-                            <th>Gender</th>
-                            <th>Age</th>
-                            <th>Height</th>
-                            <th>Weight</th>
-                            <th>Hair Color</th>
-                            <th>Eye Color</th>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p>Demon</p>
-                                <p>Human (Formerly)</p>
-                            </td>
-                            <td>Male</td>
-                            <td>
-                                <p>17-24 (Human)</p>
-                                <p>&lt; 480 (Chronologically)</p>
-                            </td>
-                            <td>190 cm (6'3")</td>
-                            <td>93 kg (205 lb)</td>
-                            <td>Black with Red Tips</td>
-                            <td>
-                                <p>Maroon (Human)</p>
-                                <p>Gold with Red Sclera (Demon)</p>
-                            </td>
-                        </tr>
+                            <tr>
+                                <th colSpan={7}>Characteristics</th>
+                            </tr>
+                        </thead>
+                        <tbody className="bg-koku-dark-purple" id="header-2">
+                            <tr>
+                                <td>Race</td>
+                                <td>Gender</td>
+                                <td>Age</td>
+                                <td>Height</td>
+                                <td>Weight</td>
+                                <td>Hair Color</td>
+                                <td>Eye Color</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>
+                                    <p>Demon</p>
+                                    <p>Human (Formerly)</p>
+                                </td>
+                                <td>Male</td>
+                                <td>
+                                    <p>17-24 (Human)</p>
+                                    <p>&lt; 480 (Chronologically)</p>
+                                </td>
+                                <td>190 cm (6'3")</td>
+                                <td>93 kg (205 lb)</td>
+                                <td>Black with Red Tips</td>
+                                <td>
+                                    <p>Maroon (Human)</p>
+                                    <p>Gold with Red Sclera (Demon)</p>
+                                </td>
+                            </tr>
+                        </tfoot>
                     </table>
 
                     <table>
-                        <tr
+                        <thead
                             className="text-center bg-black text-lg"
                             id="header"
                         >
-                            <th colSpan={2}>Debuts</th>
-                            <th colSpan={3}>Portrayal</th>
-                        </tr>
-                        <tr className="bg-koku-dark-purple" id="header-2">
-                            <th>Manga Debut</th>
-                            <th>Anime Debut</th>
-                            <th>Japanese VA</th>
-                            <th>English VA</th>
-                            <th>Stage Play</th>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p>Chapter 98 (Partial Appearance)</p>
-                                <p>Chapter 99 (Full Appearance)</p>
-                            </td>
-                            <td>Episode 45</td>
-                            <td>Ryōtarō Okiayu</td>
-                            <td>Jonah Scott</td>
-                            <td>Kazuki Kato</td>
-                        </tr>
+                            <tr>
+                                <th colSpan={2}>Debuts</th>
+                                <th colSpan={3}>Portrayal</th>
+                            </tr>
+                        </thead>
+                        <tbody className="bg-koku-dark-purple" id="header-2">
+                            <tr>
+                                <td>Manga Debut</td>
+                                <td>Anime Debut</td>
+                                <td>Japanese VA</td>
+                                <td>English VA</td>
+                                <td>Stage Play</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>
+                                    <p>Chapter 98 (Partial Appearance)</p>
+                                    <p>Chapter 99 (Full Appearance)</p>
+                                </td>
+                                <td>Episode 45</td>
+                                <td>Ryōtarō Okiayu</td>
+                                <td>Jonah Scott</td>
+                                <td>Kazuki Kato</td>
+                            </tr>
+                        </tfoot>
                     </table>
 
                     <table>
-                        <tr
+                        <thead
                             className="text-center bg-black text-lg"
                             id="header"
                         >
-                            <th colSpan={2}>Personal Status</th>
-                        </tr>
-                        <tr className="bg-koku-dark-purple" id="header-2">
-                            <th>Status</th>
-                            <th>Relatives</th>
-                        </tr>
-                        <tr>
-                            <td>Deceased</td>
-                            <td>
-                                <p>Unnamed Father</p>
-                                <p>Akeno Tsugikuni (Mother)</p>
-                                <p>Yoriichi Tsugikuni (Younger Twin Brother)</p>
-                                <p>Unnamed Wife</p>
-                                <p>Two Unnamed Children</p>
-                                <p>Muichiro Tokito (Descendant)</p>
-                                <p>Yuichiro Tokito (Descendant)</p>
-                                <p>Uta (Sister-in-Law)</p>
-                            </td>
-                        </tr>
+                            <tr>
+                                <th colSpan={2}>Personal Status</th>
+                            </tr>
+                        </thead>
+                        <tbody className="bg-koku-dark-purple" id="header-2">
+                            <tr>
+                                <td>Status</td>
+                                <td>Relatives</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Deceased</td>
+                                <td>
+                                    <p>Unnamed Father</p>
+                                    <p>Akeno Tsugikuni (Mother)</p>
+                                    <p>
+                                        Yoriichi Tsugikuni (Younger Twin
+                                        Brother)
+                                    </p>
+                                    <p>Unnamed Wife</p>
+                                    <p>Two Unnamed Children</p>
+                                    <p>Muichiro Tokito (Descendant)</p>
+                                    <p>Yuichiro Tokito (Descendant)</p>
+                                    <p>Uta (Sister-in-Law)</p>
+                                </td>
+                            </tr>
+                        </tfoot>
                     </table>
                 </section>
                 {/* Appearance Section */}
@@ -434,7 +458,7 @@ export default function Main({ refs }) {
                         className="grid grid-cols-1 gap-3 show"
                         id="Personality_content"
                     >
-                        <p>
+                        <div>
                             <div className="float-right m-3 w-60">
                                 <img
                                     src="./src/assets/koku_sit.webp"
@@ -446,26 +470,30 @@ export default function Main({ refs }) {
                                     Kokushibo's stoic and reserved disposition.
                                 </small>
                             </div>
-                            Kokushibo is reserved, silent, and aloof,
-                            maintaining an aura of unnerving tranquility and
-                            mystery that complemented his position as Upper Rank
-                            One. He rarely spoke; when he did, he talked in a
-                            slow and emphatic manner that gave more gravitas and
-                            authority to his words. He is an adamant, punctual
-                            rule-follower and shows deep respect to the
-                            hierarchy of the Twelve Kizuki, as seen during the
-                            Upper Ranks Meeting. Kokushibo is shown to be humble
-                            as well, and is not hesitant to admit his failure or
-                            complain of any difficulty. He demonstrates
-                            unwavering loyalty towards Muzan Kibutsuji, carrying
-                            out his actions solely to fulfill his objectives.
-                            However, his outward displayed of reservation,
-                            dignity, and humility hide a cold and unforgiving
-                            side to his personality. When reprimanding
-                            individuals, his words are harsh and firm, bordering
-                            on cruel and disdainful, and his threats were severe
-                            and demand absolute obedience.
-                        </p>
+                            <p>
+                                Kokushibo is reserved, silent, and aloof,
+                                maintaining an aura of unnerving tranquility and
+                                mystery that complemented his position as Upper
+                                Rank One. He rarely spoke; when he did, he
+                                talked in a slow and emphatic manner that gave
+                                more gravitas and authority to his words. He is
+                                an adamant, punctual rule-follower and shows
+                                deep respect to the hierarchy of the Twelve
+                                Kizuki, as seen during the Upper Ranks Meeting.
+                                Kokushibo is shown to be humble as well, and is
+                                not hesitant to admit his failure or complain of
+                                any difficulty. He demonstrates unwavering
+                                loyalty towards Muzan Kibutsuji, carrying out
+                                his actions solely to fulfill his objectives.
+                                However, his outward displayed of reservation,
+                                dignity, and humility hide a cold and
+                                unforgiving side to his personality. When
+                                reprimanding individuals, his words are harsh
+                                and firm, bordering on cruel and disdainful, and
+                                his threats were severe and demand absolute
+                                obedience.
+                            </p>
+                        </div>
                         <p>
                             Kokushibo is shown to be genuinely delighted when
                             the opponents he faced challenged him, such as
@@ -485,7 +513,7 @@ export default function Main({ refs }) {
                             impending death from unlocking his Demon Slayer
                             Marks.
                         </p>
-                        <p>
+                        <div>
                             <div className="float-left m-3 w-60">
                                 <img
                                     src="./src/assets/koku_angry.webp"
@@ -498,31 +526,35 @@ export default function Main({ refs }) {
                                     self-inflicted death.
                                 </small>
                             </div>
-                            Having abandoned his humanity in the pursuit of
-                            strength, Kokushibo shows a scornful view on humans
-                            and their values. Following Akaza's self-inflicted
-                            defeat, he derided him as "exceedingly weak" for
-                            abandoning his existence as a demon to reconcile
-                            with his lost humanity in death. He mocks Gyomei for
-                            expressing indifference at the curse of the Demon
-                            Slayer Mark, believing his rejection of his fate was
-                            a foolish notion, and he later taunted him and
-                            Sanemi when they ripped off his kimono in an attempt
-                            to attack him, deriding their efforts as "not even
-                            enough to kill an infant". He also showed no
-                            tolerance for Genya Shinazugawa's ability to gain
-                            the power of demons by consuming them, calling the
-                            boy an "imitation demon" that he could not let live.
-                            He shows something of warmth towards his descendant,
-                            Muichiro, commending his skills and resolve and
-                            being moved to offer Muichiro a chance to become a
-                            demon. When their battle comes to an end, Kokushibo
-                            expresses regret at having struck down his
-                            descendant. At the same time, he refers to Muichiro
-                            and his abilities as the natural result of his cells
-                            being passed down.
-                        </p>
-                        <p>
+                            <p>
+                                Having abandoned his humanity in the pursuit of
+                                strength, Kokushibo shows a scornful view on
+                                humans and their values. Following Akaza's
+                                self-inflicted defeat, he derided him as
+                                "exceedingly weak" for abandoning his existence
+                                as a demon to reconcile with his lost humanity
+                                in death. He mocks Gyomei for expressing
+                                indifference at the curse of the Demon Slayer
+                                Mark, believing his rejection of his fate was a
+                                foolish notion, and he later taunted him and
+                                Sanemi when they ripped off his kimono in an
+                                attempt to attack him, deriding their efforts as
+                                "not even enough to kill an infant". He also
+                                showed no tolerance for Genya Shinazugawa's
+                                ability to gain the power of demons by consuming
+                                them, calling the boy an "imitation demon" that
+                                he could not let live. He shows something of
+                                warmth towards his descendant, Muichiro,
+                                commending his skills and resolve and being
+                                moved to offer Muichiro a chance to become a
+                                demon. When their battle comes to an end,
+                                Kokushibo expresses regret at having struck down
+                                his descendant. At the same time, he refers to
+                                Muichiro and his abilities as the natural result
+                                of his cells being passed down.
+                            </p>
+                        </div>
+                        <div>
                             <div className="float-right w-60">
                                 <img
                                     src="./src/assets/koku_talk.webp"
@@ -535,31 +567,36 @@ export default function Main({ refs }) {
                                     to persuade him into becoming a demon.
                                 </small>
                             </div>
-                            Throughout his life, Kokushibo is shown to be a man
-                            that greatly values the concept of legacy. As a
-                            human, he told his brother that since there were no
-                            skilled warriors comparable to them, their Breathing
-                            Styles would disappear without successors, before
-                            becoming irritated at Yoriichi's optimistic
-                            indifference. When he realized that those that had
-                            awakened their Demon Slayer Mark died before
-                            reaching the age of 25 and grew worried that he was
-                            without a future, he accepted Muzan's offer to
-                            become a demon to further perfect his techniques.
-                            Even as a demon, this is shown when he is pleased
-                            that his lineage lived on through Muichiro, and he
-                            tells Gyomei that his body and techniques would go
-                            to waste because of his mark in an attempt to accept
-                            becoming a demon. Additionally, in his clash against
-                            him, the demon's banter suggested that he feared
-                            death; when Gyomei's marks appear, Kokushibo
-                            preemptively bemoans the loss of a talented fighter,
-                            and he urges him to become a demon to continue
-                            honing his skills. He seemed surprised when Gyomei
-                            vehemently rejected his offer and called his
-                            mentality pathetic.
-                        </p>
-                        <p>
+
+                            <p>
+                                {" "}
+                                Throughout his life, Kokushibo is shown to be a
+                                man that greatly values the concept of legacy.
+                                As a human, he told his brother that since there
+                                were no skilled warriors comparable to them,
+                                their Breathing Styles would disappear without
+                                successors, before becoming irritated at
+                                Yoriichi's optimistic indifference. When he
+                                realized that those that had awakened their
+                                Demon Slayer Mark died before reaching the age
+                                of 25 and grew worried that he was without a
+                                future, he accepted Muzan's offer to become a
+                                demon to further perfect his techniques. Even as
+                                a demon, this is shown when he is pleased that
+                                his lineage lived on through Muichiro, and he
+                                tells Gyomei that his body and techniques would
+                                go to waste because of his mark in an attempt to
+                                accept becoming a demon. Additionally, in his
+                                clash against him, the demon's banter suggested
+                                that he feared death; when Gyomei's marks
+                                appear, Kokushibo preemptively bemoans the loss
+                                of a talented fighter, and he urges him to
+                                become a demon to continue honing his skills. He
+                                seemed surprised when Gyomei vehemently rejected
+                                his offer and called his mentality pathetic.
+                            </p>
+                        </div>
+                        <div>
                             <div className="float-left m-3 w-60">
                                 <img
                                     src="./src/assets/koku_rage.webp"
@@ -572,38 +609,44 @@ export default function Main({ refs }) {
                                     Yoriichi.
                                 </small>
                             </div>
-                            He possessed a complex relationship with his human
-                            past. It is revealed that, as a human, Kokushibo,
-                            then Michikatsu, pitied Yoriichi during the period
-                            of time when he was mute, viewing him as a meek and
-                            callow boy dependent on his mother. He gifted him a
-                            flute to use when he needed his brother, and smiled
-                            at him despite being bruised from his father's
-                            beatings. However, he later harbored an immense
-                            sense of envy towards his younger twin brother for
-                            his natural talent and incredible abilities. These
-                            feelings of jealousy and contempt only became
-                            stronger upon seeing his brother become a peerless
-                            warrior of unmatched caliber among even the Demon
-                            Slayer Corps, with none of the Hashira coming close
-                            to his level of strength.
-                            <br />
-                            <br />
-                            This fostered a drive to become as strong or surpass
-                            his brother, a sentiment so strong that he abandoned
-                            his family to pursue becoming a Demon Slayer, and
-                            later, into a demon. His envy peaked when he
-                            discovers that Yoriichi is still alive and in old
-                            age, completely surpassing the curse of the Demon
-                            Slayer Marks that killed anyone that awakened them
-                            before they turned 25. Even centuries later,
-                            Yoriichi's immunity to the curse haunted Kokushibo,
-                            and the usually phlegmatic demon would become
-                            rattled when Gyomei inadvertently reminded him of
-                            Yoriichi by accusing him of lying about the curse
-                            having no exceptions, which prompted him to attack.
-                        </p>
-                        <p>
+
+                            <p>
+                                {" "}
+                                He possessed a complex relationship with his
+                                human past. It is revealed that, as a human,
+                                Kokushibo, then Michikatsu, pitied Yoriichi
+                                during the period of time when he was mute,
+                                viewing him as a meek and callow boy dependent
+                                on his mother. He gifted him a flute to use when
+                                he needed his brother, and smiled at him despite
+                                being bruised from his father's beatings.
+                                However, he later harbored an immense sense of
+                                envy towards his younger twin brother for his
+                                natural talent and incredible abilities. These
+                                feelings of jealousy and contempt only became
+                                stronger upon seeing his brother become a
+                                peerless warrior of unmatched caliber among even
+                                the Demon Slayer Corps, with none of the Hashira
+                                coming close to his level of strength.
+                                <br />
+                                <br />
+                                This fostered a drive to become as strong or
+                                surpass his brother, a sentiment so strong that
+                                he abandoned his family to pursue becoming a
+                                Demon Slayer, and later, into a demon. His envy
+                                peaked when he discovers that Yoriichi is still
+                                alive and in old age, completely surpassing the
+                                curse of the Demon Slayer Marks that killed
+                                anyone that awakened them before they turned 25.
+                                Even centuries later, Yoriichi's immunity to the
+                                curse haunted Kokushibo, and the usually
+                                phlegmatic demon would become rattled when
+                                Gyomei inadvertently reminded him of Yoriichi by
+                                accusing him of lying about the curse having no
+                                exceptions, which prompted him to attack.
+                            </p>
+                        </div>
+                        <div>
                             <div className="float-right w-60">
                                 <img
                                     src="./src/assets/koku_cry.webp"
@@ -616,47 +659,53 @@ export default function Main({ refs }) {
                                     of his brother's love for him.
                                 </small>
                             </div>
-                            However, despite this immense jealousy, spite, and
-                            outright hatred he harbors for Yoriichi, he still
-                            deeply cared for his brother, as seen when he was
-                            touched by Yoriichi treasuring the handmade flute he
-                            had made for him as a child; Kokushibo shedded tears
-                            over his brother's death, and went as far as keeping
-                            the flute itself for the following centuries as a
-                            memento.
-                            <br />
-                            <br />
-                            Kokushibo's fear of defeat stemmed from his
-                            inferiority complex and desire for strength. This
-                            fear caused him to become increasingly aggressive
-                            and desperate in battle, relying on his demon
-                            powers, and even killing and dismembering Muichiro
-                            despite his earlier to desire to turn him into a
-                            demon. However, as he faced off against the Hashira,
-                            Kokushibo realized the heavy cost of his pursuit of
-                            strength. Becoming a grotesque monster, far from his
-                            idealized vision of becoming the strongest samurai,
-                            highlighted how much his ambitions and resentment
-                            have twisted him.
-                            <br />
-                            <br />
-                            In his final moments, he was filled with sorrow and
-                            rage, lamenting his life choices upon seeing he
-                            hasn't achieved his goals and questioning if the
-                            path he chose was truly the right one. He realized
-                            that his desire for a legacy had been for naught and
-                            he had ended up accomplishing nothing in his
-                            centuries of existence. As he disintegrated,
-                            Kokushibo highlights that he just wanted to become
-                            as strong and honoured like Yoriichi, showing that
-                            who he despised the most was also someone he looked
-                            to as an idealized paragon to shape his life by. In
-                            the end, he angrily asked his deceased brother why
-                            he couldn't leave anything behind, why he couldn't
-                            become anyone, why were they different, and why he
-                            was even born, expressing his frustration at not
-                            achieving his desires.
-                        </p>
+
+                            <p>
+                                {" "}
+                                However, despite this immense jealousy, spite,
+                                and outright hatred he harbors for Yoriichi, he
+                                still deeply cared for his brother, as seen when
+                                he was touched by Yoriichi treasuring the
+                                handmade flute he had made for him as a child;
+                                Kokushibo shedded tears over his brother's
+                                death, and went as far as keeping the flute
+                                itself for the following centuries as a memento.
+                                <br />
+                                <br />
+                                Kokushibo's fear of defeat stemmed from his
+                                inferiority complex and desire for strength.
+                                This fear caused him to become increasingly
+                                aggressive and desperate in battle, relying on
+                                his demon powers, and even killing and
+                                dismembering Muichiro despite his earlier to
+                                desire to turn him into a demon. However, as he
+                                faced off against the Hashira, Kokushibo
+                                realized the heavy cost of his pursuit of
+                                strength. Becoming a grotesque monster, far from
+                                his idealized vision of becoming the strongest
+                                samurai, highlighted how much his ambitions and
+                                resentment have twisted him.
+                                <br />
+                                <br />
+                                In his final moments, he was filled with sorrow
+                                and rage, lamenting his life choices upon seeing
+                                he hasn't achieved his goals and questioning if
+                                the path he chose was truly the right one. He
+                                realized that his desire for a legacy had been
+                                for naught and he had ended up accomplishing
+                                nothing in his centuries of existence. As he
+                                disintegrated, Kokushibo highlights that he just
+                                wanted to become as strong and honoured like
+                                Yoriichi, showing that who he despised the most
+                                was also someone he looked to as an idealized
+                                paragon to shape his life by. In the end, he
+                                angrily asked his deceased brother why he
+                                couldn't leave anything behind, why he couldn't
+                                become anyone, why were they different, and why
+                                he was even born, expressing his frustration at
+                                not achieving his desires.
+                            </p>
+                        </div>
                     </div>
                 </section>
                 {/* Abilities Section */}
@@ -706,7 +755,7 @@ export default function Main({ refs }) {
                                 className="grid grid-cols-1 gap-3 show"
                                 id="Overall_content"
                             >
-                                <p>
+                                <div>
                                     <div className="float-right m-3 w-60">
                                         <img
                                             src="./src/assets/koku_hand.webp"
@@ -720,39 +769,44 @@ export default function Main({ refs }) {
                                             could react.
                                         </small>
                                     </div>
-                                    As the highest-ranking member of the Twelve
-                                    Kizuki, Kokushibo is an extraordinarily
-                                    powerful demon, second only to the Demon
-                                    King Muzan Kibutsuji himself. He has battled
-                                    countless Demon Slayers and amassed vast
-                                    experience and knowledge over his nearly
-                                    500-year-long life. His abilities are
-                                    refined to the highest level, as he is not
-                                    only a master of Total Concentration
-                                    Breathing, but also a marked individual who
-                                    has gained access to the Transparent World,
-                                    as well as the demon that possesses the
-                                    highest concentration of Muzan's blood
-                                    amongst the Upper Ranks. <br />
-                                    <br />
-                                    His overwhelming power is first displayed
-                                    when he slashes off the hand of Upper Rank
-                                    Three, Akaza, before he could even react,
-                                    and it is later stated by Doma that Akaza
-                                    would never be able to surpass the both of
-                                    them despite having improved his skills for
-                                    113 years prior to their meeting. During his
-                                    battle in the Infinity Castle, Kokushibo
-                                    effortlessly overwhelms the Mist Hashira,
-                                    Muichiro Tokito, a prodigious Demon Slayer
-                                    who singlehandedly defeated Upper Rank Five
-                                    and had awakened his Demon Slayer Mark
-                                    mid-battle. Later in the clash, he easily
-                                    slices off Muichiro's hand before he can
-                                    react and is able to catch his sword
-                                    mid-swing, before proceeding to stab him
-                                    with it.
-                                </p>
+
+                                    <p>
+                                        As the highest-ranking member of the
+                                        Twelve Kizuki, Kokushibo is an
+                                        extraordinarily powerful demon, second
+                                        only to the Demon King Muzan Kibutsuji
+                                        himself. He has battled countless Demon
+                                        Slayers and amassed vast experience and
+                                        knowledge over his nearly 500-year-long
+                                        life. His abilities are refined to the
+                                        highest level, as he is not only a
+                                        master of Total Concentration Breathing,
+                                        but also a marked individual who has
+                                        gained access to the Transparent World,
+                                        as well as the demon that possesses the
+                                        highest concentration of Muzan's blood
+                                        amongst the Upper Ranks. <br />
+                                        <br />
+                                        His overwhelming power is first
+                                        displayed when he slashes off the hand
+                                        of Upper Rank Three, Akaza, before he
+                                        could even react, and it is later stated
+                                        by Doma that Akaza would never be able
+                                        to surpass the both of them despite
+                                        having improved his skills for 113 years
+                                        prior to their meeting. During his
+                                        battle in the Infinity Castle, Kokushibo
+                                        effortlessly overwhelms the Mist
+                                        Hashira, Muichiro Tokito, a prodigious
+                                        Demon Slayer who singlehandedly defeated
+                                        Upper Rank Five and had awakened his
+                                        Demon Slayer Mark mid-battle. Later in
+                                        the clash, he easily slices off
+                                        Muichiro's hand before he can react and
+                                        is able to catch his sword mid-swing,
+                                        before proceeding to stab him with it.
+                                    </p>
+                                </div>
                                 <p>
                                     Genya Shinazugawa, who played a major role
                                     in the defeat of Upper Rank Four, also stood
@@ -773,7 +827,7 @@ export default function Main({ refs }) {
                                     even when the latter also awakened his own
                                     Demon Slayer Mark.
                                 </p>
-                                <p>
+                                <div>
                                     <div className="float-left m-3 w-60">
                                         <img
                                             src="./src/assets/koku_moons.webp"
@@ -787,44 +841,52 @@ export default function Main({ refs }) {
                                             technique.
                                         </small>
                                     </div>
-                                    Once he utilizes an enhanced version of his
-                                    katana, it ultimately took the combined
-                                    effort and full abilities of all four Demon
-                                    Slayers, the three Hashira with their marks
-                                    and Genya empowered with a portion of
-                                    Kokushibo's own power, to even land a
-                                    significant injury on him. Moreover, Gyomei
-                                    and Muichiro also needed to see into the
-                                    Transparent World. Nonetheless, the only way
-                                    that the Demon Slayers could win was to
-                                    immobilize him, which took the lives of
-                                    Muichiro and Genya, the former sacrificing
-                                    himself to leave Kokushibo in the open and
-                                    the latter needing to utilize a new Blood
-                                    Demon Art to restrain the Upper Rank. Even
-                                    then, the Demon Slayers were still met with
-                                    resistance due to Kokushibo's very high
-                                    durability and needed to turn their blades
-                                    bright red in order to behead him.
-                                    <br />
-                                    <br />
-                                    Despite everything that they did, Kokushibo
-                                    manages to regrow his head through sheer
-                                    will, making him virtually invincible with
-                                    the exception of the sun. In the end, along
-                                    with a momentary lapse in his concentration
-                                    due to seeing the extent of his pursuit of
-                                    further strength transforming him into a
-                                    grotesque monster, it required Muichiro's
-                                    bright red blade burning Kokushibo's body
-                                    from the inside, Genya's Blood Demon Art
-                                    siphoning off enough of his blood to prevent
-                                    him from healing and using a technique, and
-                                    a joint effort by Sanemi and Gyomei using
-                                    their bright red weapons to behead and
-                                    destroy his body, to finally defeat the
-                                    strongest member of the Twelve Kizuki.
-                                </p>
+
+                                    <p>
+                                        Once he utilizes an enhanced version of
+                                        his katana, it ultimately took the
+                                        combined effort and full abilities of
+                                        all four Demon Slayers, the three
+                                        Hashira with their marks and Genya
+                                        empowered with a portion of Kokushibo's
+                                        own power, to even land a significant
+                                        injury on him. Moreover, Gyomei and
+                                        Muichiro also needed to see into the
+                                        Transparent World. Nonetheless, the only
+                                        way that the Demon Slayers could win was
+                                        to immobilize him, which took the lives
+                                        of Muichiro and Genya, the former
+                                        sacrificing himself to leave Kokushibo
+                                        in the open and the latter needing to
+                                        utilize a new Blood Demon Art to
+                                        restrain the Upper Rank. Even then, the
+                                        Demon Slayers were still met with
+                                        resistance due to Kokushibo's very high
+                                        durability and needed to turn their
+                                        blades bright red in order to behead
+                                        him.
+                                        <br />
+                                        <br />
+                                        Despite everything that they did,
+                                        Kokushibo manages to regrow his head
+                                        through sheer will, making him virtually
+                                        invincible with the exception of the
+                                        sun. In the end, along with a momentary
+                                        lapse in his concentration due to seeing
+                                        the extent of his pursuit of further
+                                        strength transforming him into a
+                                        grotesque monster, it required
+                                        Muichiro's bright red blade burning
+                                        Kokushibo's body from the inside,
+                                        Genya's Blood Demon Art siphoning off
+                                        enough of his blood to prevent him from
+                                        healing and using a technique, and a
+                                        joint effort by Sanemi and Gyomei using
+                                        their bright red weapons to behead and
+                                        destroy his body, to finally defeat the
+                                        strongest member of the Twelve Kizuki.
+                                    </p>
+                                </div>
                                 <p>
                                     All in all, Kokushibo's defeat required the
                                     combined efforts of three powerful marked
@@ -847,7 +909,7 @@ export default function Main({ refs }) {
                                     head, all because he didn't allow himself to
                                     die until he accomplished his goal.[26]
                                 </p>
-                                <p>
+                                <div>
                                     <div className="float-right m-3 w-60">
                                         <img
                                             src="./src/assets/koku_suprise.webp"
@@ -861,28 +923,32 @@ export default function Main({ refs }) {
                                             after witnessing one attack.
                                         </small>
                                     </div>
-                                    <strong>Tactical Intellect:</strong> As a
-                                    talented swordsman who had existed for
-                                    nearly five centuries, Kokushibo has
-                                    experienced countless battle situations and
-                                    threats, which he had learned to overcome.
-                                    This was displayed during his battle with
-                                    three marked Hashira and a demon-enhanced
-                                    Demon Slayer, where he was able to adapt to
-                                    their unique fighting styles and tactics
-                                    almost instantly after witnessing it. After
-                                    Muichiro unleashed his first attack against
-                                    the Upper Rank, he was able to determine he
-                                    was a user of Mist Breathing. This was
-                                    further accentuated through Kokushibo being
-                                    able to take on Sanemi and Gyomei
-                                    simultaneously despite both of them being
-                                    marked and being users of different
-                                    Breathing Styles, showing that he was
-                                    capable of understanding two vastly
-                                    different opponents at once in the heat of
-                                    battle.
-                                </p>
+
+                                    <p>
+                                        <strong>Tactical Intellect:</strong> As
+                                        a talented swordsman who had existed for
+                                        nearly five centuries, Kokushibo has
+                                        experienced countless battle situations
+                                        and threats, which he had learned to
+                                        overcome. This was displayed during his
+                                        battle with three marked Hashira and a
+                                        demon-enhanced Demon Slayer, where he
+                                        was able to adapt to their unique
+                                        fighting styles and tactics almost
+                                        instantly after witnessing it. After
+                                        Muichiro unleashed his first attack
+                                        against the Upper Rank, he was able to
+                                        determine he was a user of Mist
+                                        Breathing. This was further accentuated
+                                        through Kokushibo being able to take on
+                                        Sanemi and Gyomei simultaneously despite
+                                        both of them being marked and being
+                                        users of different Breathing Styles,
+                                        showing that he was capable of
+                                        understanding two vastly different
+                                        opponents at once in the heat of battle.
+                                    </p>
+                                </div>
                             </div>
                         </section>
                         {/* Demon Abilities */}
@@ -1123,7 +1189,7 @@ export default function Main({ refs }) {
                                 className="grid grid-cols-1 gap-3 show"
                                 id="Physical_content"
                             >
-                                <p>
+                                <div>
                                     <div className="float-left m-3 w-60">
                                         <img
                                             src="./src/assets/koku_kirk.webp"
@@ -1137,24 +1203,30 @@ export default function Main({ refs }) {
                                             Nichirin sword.
                                         </small>
                                     </div>
-                                    <strong>Immense Durability: </strong>Due to
-                                    having an extremely high concentration of
-                                    Muzan's blood, Kokushibo possessed
-                                    incredibly high durability. His neck was so
-                                    resistant that a marked Sanemi barely
-                                    succeeded in cutting him despite swinging
-                                    his sword with all his might. Furthermore,
-                                    Gyomei's massive spiked iron ball was
-                                    similarly ineffective in damaging his neck,
-                                    despite the Stone Hashira slamming his flail
-                                    on Kokushibo's neck from above. Even when a
-                                    marked Sanemi slammed his katana down onto
-                                    Gyomei's spiked iron ball, the Demon Slayers
-                                    only successfully sliced off Kokushibo's
-                                    head when both of their weapons turned
-                                    bright red.
-                                </p>
-                                <p>
+
+                                    <p>
+                                        {" "}
+                                        <strong>Immense Durability: </strong>Due
+                                        to having an extremely high
+                                        concentration of Muzan's blood,
+                                        Kokushibo possessed incredibly high
+                                        durability. His neck was so resistant
+                                        that a marked Sanemi barely succeeded in
+                                        cutting him despite swinging his sword
+                                        with all his might. Furthermore,
+                                        Gyomei's massive spiked iron ball was
+                                        similarly ineffective in damaging his
+                                        neck, despite the Stone Hashira slamming
+                                        his flail on Kokushibo's neck from
+                                        above. Even when a marked Sanemi slammed
+                                        his katana down onto Gyomei's spiked
+                                        iron ball, the Demon Slayers only
+                                        successfully sliced off Kokushibo's head
+                                        when both of their weapons turned bright
+                                        red.
+                                    </p>
+                                </div>
+                                <div>
                                     <div className="float-right m-3 w-60">
                                         <img
                                             src="./src/assets/koku_arm.webp"
@@ -1167,33 +1239,42 @@ export default function Main({ refs }) {
                                             fast he appears not to move.
                                         </small>
                                     </div>
-                                    <strong>Immense Speed & Reflexes: </strong>
-                                    Kokushibo possesses immense levels of speed
-                                    far surpassing that of the other Upper
-                                    Ranks, as first shown when he slashes off
-                                    Akaza's arm before he, or any of the other
-                                    demons present, realized. Later on, when he
-                                    departs from the Upper Rank Meeting
-                                    following his reprimanding of Akaza,
-                                    Kokushibo appeared as if he wisped out of
-                                    view. He displays his phenomenal speed on
-                                    multiple occasions while fighting. Firstly,
-                                    he is able to effortlessly outpace
-                                    Muichiro's Mist Breathing form, with
-                                    Muichiro even remarking that Kokushibo's
-                                    speed was phenomenal compared to his own,
-                                    despite his abilities being amplified by his
-                                    Demon Slayer Mark. When Genya fired his
-                                    shotgun at the Upper Rank from a distance,
-                                    Kokushibo is able to suddenly appear behind
-                                    him before the pellets could reach where he
-                                    initially was, before slicing his arm off
-                                    the moment he arrived. He then draws his
-                                    blade and slashes off his other arm and his
-                                    torso so quickly, his hand didn't even
-                                    appear to move.
-                                </p>
-                                <p>
+
+                                    <p>
+                                        {" "}
+                                        <strong>
+                                            Immense Speed & Reflexes:{" "}
+                                        </strong>
+                                        Kokushibo possesses immense levels of
+                                        speed far surpassing that of the other
+                                        Upper Ranks, as first shown when he
+                                        slashes off Akaza's arm before he, or
+                                        any of the other demons present,
+                                        realized. Later on, when he departs from
+                                        the Upper Rank Meeting following his
+                                        reprimanding of Akaza, Kokushibo
+                                        appeared as if he wisped out of view. He
+                                        displays his phenomenal speed on
+                                        multiple occasions while fighting.
+                                        Firstly, he is able to effortlessly
+                                        outpace Muichiro's Mist Breathing form,
+                                        with Muichiro even remarking that
+                                        Kokushibo's speed was phenomenal
+                                        compared to his own, despite his
+                                        abilities being amplified by his Demon
+                                        Slayer Mark. When Genya fired his
+                                        shotgun at the Upper Rank from a
+                                        distance, Kokushibo is able to suddenly
+                                        appear behind him before the pellets
+                                        could reach where he initially was,
+                                        before slicing his arm off the moment he
+                                        arrived. He then draws his blade and
+                                        slashes off his other arm and his torso
+                                        so quickly, his hand didn't even appear
+                                        to move.
+                                    </p>
+                                </div>
+                                <div>
                                     <div className="float-left m-3 w-60">
                                         <img
                                             src="./src/assets/koku_own.webp"
@@ -1207,39 +1288,46 @@ export default function Main({ refs }) {
                                             distance.
                                         </small>
                                     </div>
-                                    Kokushibo could easily keep up with the Wind
-                                    Hashira's blistering speed and forms,
-                                    despite Sanemi exerting himself to the limit
-                                    in order to stay alive. He evaded a surprise
-                                    attempt to stab him from below the chin by
-                                    tilting his head back, and later on, when
-                                    Sanemi used his brother's shotgun to shoot
-                                    at the Upper Rank, Kokushibo is quick enough
-                                    to block the pellets even when it is fired
-                                    point-blank. After feeling the need to try
-                                    harder, Kokushibo subdues the Wind Hashira
-                                    with a single technique that he couldn't
-                                    evade in time, delivering numerous cuts and
-                                    slashes all across his body. Even against
-                                    Gyomei Himejima, the strongest Hashira of
-                                    the Taisho era, Kokushibo is still more than
-                                    capable of keeping up with his highly
-                                    unorthodox fighting style. Even after both
-                                    Hashira became marked, an enraged Kokushibo
-                                    could unleash attacks that even they
-                                    couldn't fully react to and he handily
-                                    outpaced them throughout their battle. His
-                                    imperceptible speed posed such a threat to
-                                    his opponents that Muichiro had to sacrifice
-                                    a leg in order to stop the Upper Rank from
-                                    moving so that Genya could fully immobilize
-                                    him with his Blood Demon Art. After
-                                    transforming, Kokushibo was able to move so
-                                    fast, he appeared as a blur to a marked
-                                    Gyomei and Sanemi when they attempt to
-                                    finish him off.
-                                </p>
-                                <p>
+
+                                    <p>
+                                        {" "}
+                                        Kokushibo could easily keep up with the
+                                        Wind Hashira's blistering speed and
+                                        forms, despite Sanemi exerting himself
+                                        to the limit in order to stay alive. He
+                                        evaded a surprise attempt to stab him
+                                        from below the chin by tilting his head
+                                        back, and later on, when Sanemi used his
+                                        brother's shotgun to shoot at the Upper
+                                        Rank, Kokushibo is quick enough to block
+                                        the pellets even when it is fired
+                                        point-blank. After feeling the need to
+                                        try harder, Kokushibo subdues the Wind
+                                        Hashira with a single technique that he
+                                        couldn't evade in time, delivering
+                                        numerous cuts and slashes all across his
+                                        body. Even against Gyomei Himejima, the
+                                        strongest Hashira of the Taisho era,
+                                        Kokushibo is still more than capable of
+                                        keeping up with his highly unorthodox
+                                        fighting style. Even after both Hashira
+                                        became marked, an enraged Kokushibo
+                                        could unleash attacks that even they
+                                        couldn't fully react to and he handily
+                                        outpaced them throughout their battle.
+                                        His imperceptible speed posed such a
+                                        threat to his opponents that Muichiro
+                                        had to sacrifice a leg in order to stop
+                                        the Upper Rank from moving so that Genya
+                                        could fully immobilize him with his
+                                        Blood Demon Art. After transforming,
+                                        Kokushibo was able to move so fast, he
+                                        appeared as a blur to a marked Gyomei
+                                        and Sanemi when they attempt to finish
+                                        him off.
+                                    </p>
+                                </div>
+                                <div>
                                     <div className="float-right m-3 w-60">
                                         <img
                                             src="./src/assets/koku_foot.webp"
@@ -1253,42 +1341,50 @@ export default function Main({ refs }) {
                                             alone.
                                         </small>
                                     </div>
-                                    <strong>Immense Strength: </strong>As a
-                                    former Demon Slayer who has mastered Total
-                                    Concentration Breathing and had gained the
-                                    Demon Slayer Marks prior to becoming a
-                                    demon, Kokushibo possesses immense physical
-                                    strength, superior to that of all the other
-                                    Upper Ranks. He is able to crack the ground
-                                    just by stomping on Sanemi's sword and is
-                                    capable of wielding a gigantic sword much
-                                    heavier and longer than a regular katana and
-                                    swinging it incessantly at incomprehensible
-                                    speeds without rest or much effort. After
-                                    transforming, Kokushibo was able to slice
-                                    off Muichiro's arm with his bare hands, akin
-                                    to a blade.
-                                    <br />
-                                    <br />
-                                    <strong>
-                                        Unlimited Stamina & Endurance:{" "}
-                                    </strong>
-                                    Like all demons, Kokushibo possesses
-                                    virtually limitless stamina and vitality,
-                                    never tiring and always remaining in optimal
-                                    physical and mental condition all the time,
-                                    as well as being able to endure waves of
-                                    onslaught as if it were nothing. Despite
-                                    having his limbs and whole chunks of his
-                                    body repeatedly torn off and destroyed, he
-                                    continues to heal and fight the Demon
-                                    Slayers with little trouble. In fact, his
-                                    only instances of expressly experiencing any
-                                    discomfort in his battle are from Muichiro's
-                                    bright red katana and Gyomei's
-                                    sunlight-soaked flail burning his body from
-                                    the inside and his neck respectively.
-                                </p>
+
+                                    <p>
+                                        {" "}
+                                        <strong>Immense Strength: </strong>As a
+                                        former Demon Slayer who has mastered
+                                        Total Concentration Breathing and had
+                                        gained the Demon Slayer Marks prior to
+                                        becoming a demon, Kokushibo possesses
+                                        immense physical strength, superior to
+                                        that of all the other Upper Ranks. He is
+                                        able to crack the ground just by
+                                        stomping on Sanemi's sword and is
+                                        capable of wielding a gigantic sword
+                                        much heavier and longer than a regular
+                                        katana and swinging it incessantly at
+                                        incomprehensible speeds without rest or
+                                        much effort. After transforming,
+                                        Kokushibo was able to slice off
+                                        Muichiro's arm with his bare hands, akin
+                                        to a blade.
+                                        <br />
+                                        <br />
+                                        <strong>
+                                            Unlimited Stamina & Endurance:{" "}
+                                        </strong>
+                                        Like all demons, Kokushibo possesses
+                                        virtually limitless stamina and
+                                        vitality, never tiring and always
+                                        remaining in optimal physical and mental
+                                        condition all the time, as well as being
+                                        able to endure waves of onslaught as if
+                                        it were nothing. Despite having his
+                                        limbs and whole chunks of his body
+                                        repeatedly torn off and destroyed, he
+                                        continues to heal and fight the Demon
+                                        Slayers with little trouble. In fact,
+                                        his only instances of expressly
+                                        experiencing any discomfort in his
+                                        battle are from Muichiro's bright red
+                                        katana and Gyomei's sunlight-soaked
+                                        flail burning his body from the inside
+                                        and his neck respectively.
+                                    </p>
+                                </div>
                             </div>
                         </section>
                         {/* Supernatural Abilities */}
@@ -1326,7 +1422,7 @@ export default function Main({ refs }) {
                                     around the Infinity Castle, evident as he no
                                     longer felt Akaza's presence when he died.
                                 </p>
-                                <p>
+                                <div>
                                     <div className="float-right m-3 w-60">
                                         <img
                                             src="./src/assets/koku_aura.webp"
@@ -1339,17 +1435,21 @@ export default function Main({ refs }) {
                                             Akaza.
                                         </small>
                                     </div>
-                                    <strong>Menacing Aura: </strong>Kokushibo
-                                    possesses a menacing and overwhelming
-                                    presence that startled even Akaza, an
-                                    extremely vindictive and aggressive demon
-                                    that hated Kokushibo, into silence and
-                                    temporarily made Muichiro Tokito, a Hashira
-                                    who has faced and defeated Upper Rank Five
-                                    on his own, temporarily lose the will to
-                                    fight, causing his body to tremble
-                                    uncontrollably.
-                                </p>
+                                    <p>
+                                        {" "}
+                                        <strong>Menacing Aura: </strong>
+                                        Kokushibo possesses a menacing and
+                                        overwhelming presence that startled even
+                                        Akaza, an extremely vindictive and
+                                        aggressive demon that hated Kokushibo,
+                                        into silence and temporarily made
+                                        Muichiro Tokito, a Hashira who has faced
+                                        and defeated Upper Rank Five on his own,
+                                        temporarily lose the will to fight,
+                                        causing his body to tremble
+                                        uncontrollably.
+                                    </p>
+                                </div>
                             </div>
                         </section>
                     </div>
@@ -1400,7 +1500,7 @@ export default function Main({ refs }) {
                                 className="grid grid-cols-1 gap-3 show"
                                 id="General_content"
                             >
-                                <p>
+                                <div>
                                     <div className="float-left m-3 w-60">
                                         <img
                                             src="./src/assets/koku_pillar.webp"
@@ -1413,22 +1513,26 @@ export default function Main({ refs }) {
                                             in a single draw of his sword.
                                         </small>
                                     </div>
-                                    <strong>Master Swordsman: </strong>MDue to
-                                    training and refining his swordsmanship
-                                    skills for almost 500 years and getting a
-                                    major boost to his physical capabilities as
-                                    a demon, Kokushibo is one of the most
-                                    powerful and skilled swordsmen to have ever
-                                    lived. As a Demon Slayer in the Golden Age
-                                    of Demon Slayers, his swordsmanship was
-                                    already outstanding, as he learned many of
-                                    his techniques from Yoriichi himself in
-                                    order to form his own Breathing Style.
-                                    According to himself, his forms were so
-                                    refined and legendary that they have no
-                                    hopes of being passed down for future
-                                    generations.
-                                </p>
+                                    <p>
+                                        {" "}
+                                        <strong>Master Swordsman: </strong>MDue
+                                        to training and refining his
+                                        swordsmanship skills for almost 500
+                                        years and getting a major boost to his
+                                        physical capabilities as a demon,
+                                        Kokushibo is one of the most powerful
+                                        and skilled swordsmen to have ever
+                                        lived. As a Demon Slayer in the Golden
+                                        Age of Demon Slayers, his swordsmanship
+                                        was already outstanding, as he learned
+                                        many of his techniques from Yoriichi
+                                        himself in order to form his own
+                                        Breathing Style. According to himself,
+                                        his forms were so refined and legendary
+                                        that they have no hopes of being passed
+                                        down for future generations.
+                                    </p>
+                                </div>
                                 <p>
                                     Kokushibo's skill with his sword allows him
                                     to defeat Akaza, a prodigious hand-to-hand
@@ -1514,7 +1618,7 @@ export default function Main({ refs }) {
                                 className="grid grid-cols-1 gap-3 show"
                                 id="Slayer_content"
                             >
-                                <p>
+                                <div>
                                     <div className="float-right m-3 w-60">
                                         <img
                                             src="./src/assets/koku_crescent.webp"
@@ -1527,55 +1631,64 @@ export default function Main({ refs }) {
                                             moon-shaped blades.
                                         </small>
                                     </div>
-                                    <strong>Crescent Moon Blades: </strong>
-                                    Complementing his Moon Breathing,
-                                    Kokushibo's Blood Demon Art allows him to
-                                    create and manipulate dozens of sharp blades
-                                    shaped like traditional crescent moons from
-                                    his flesh katana. Created from his blood,
-                                    they can be either a bright yellow or a
-                                    bright blue in color. These crescent moon
-                                    blades are innately chaotic, constantly
-                                    changing in size, direction, and speed,
-                                    making Kokushibo's attacks extremely
-                                    unpredictable and unreadable as they have no
-                                    set pattern. This greatly enhances the power
-                                    of his techniques, making every single one
-                                    of his sword swings extremely deadly and
-                                    dangerous. He also seems to be capable of
-                                    using his Blood Demon Art as long as his
-                                    katana is unsheathed, allowing him to create
-                                    crescent moon blades even without swinging
-                                    his sword or unleashing a technique. The
-                                    volatile nature of his Blood Demon Art makes
-                                    it extremely challenging for Demon Slayers
-                                    to circumvent; Sanemi stated that if not for
-                                    his years of experience in the field of
-                                    demon hunting, he wouldn't have been able to
-                                    defend himself from Kokushibo's attacks.
-                                    <br />
-                                    <br />
-                                    Kokushibo's Blood Demon Art have a secondary
-                                    ability that allows him to manipulate the
-                                    shape and range of his sword slashes when
-                                    unleashing his Moon Breathing techniques.
-                                    His slashes usually create and are
-                                    surrounded by a pink or orange crescent
-                                    shape that carries his crescent moon blades.
-                                    Kokushibo seems to be able to control said
-                                    slashes to a certain extent, increasing
-                                    their range and shape to attack his target
-                                    in impossible ways under normal
-                                    circumstances. When he distorted his katana
-                                    into its branch-like appearance, his slashes
-                                    turn into a light purple color. Kokushibo
-                                    also displays the ability to exponentially
-                                    increase the range of his sword slash with
-                                    his Moon-Dragon Ringtail technique and shape
-                                    his slashes into a circular drill-like shape
-                                    with his Drilling Slashes, Moon Through
-                                    Bamboo Leaves technique.
-                                </p>
+                                    <p>
+                                        {" "}
+                                        <strong>Crescent Moon Blades: </strong>
+                                        Complementing his Moon Breathing,
+                                        Kokushibo's Blood Demon Art allows him
+                                        to create and manipulate dozens of sharp
+                                        blades shaped like traditional crescent
+                                        moons from his flesh katana. Created
+                                        from his blood, they can be either a
+                                        bright yellow or a bright blue in color.
+                                        These crescent moon blades are innately
+                                        chaotic, constantly changing in size,
+                                        direction, and speed, making Kokushibo's
+                                        attacks extremely unpredictable and
+                                        unreadable as they have no set pattern.
+                                        This greatly enhances the power of his
+                                        techniques, making every single one of
+                                        his sword swings extremely deadly and
+                                        dangerous. He also seems to be capable
+                                        of using his Blood Demon Art as long as
+                                        his katana is unsheathed, allowing him
+                                        to create crescent moon blades even
+                                        without swinging his sword or unleashing
+                                        a technique. The volatile nature of his
+                                        Blood Demon Art makes it extremely
+                                        challenging for Demon Slayers to
+                                        circumvent; Sanemi stated that if not
+                                        for his years of experience in the field
+                                        of demon hunting, he wouldn't have been
+                                        able to defend himself from Kokushibo's
+                                        attacks.
+                                        <br />
+                                        <br />
+                                        Kokushibo's Blood Demon Art have a
+                                        secondary ability that allows him to
+                                        manipulate the shape and range of his
+                                        sword slashes when unleashing his Moon
+                                        Breathing techniques. His slashes
+                                        usually create and are surrounded by a
+                                        pink or orange crescent shape that
+                                        carries his crescent moon blades.
+                                        Kokushibo seems to be able to control
+                                        said slashes to a certain extent,
+                                        increasing their range and shape to
+                                        attack his target in impossible ways
+                                        under normal circumstances. When he
+                                        distorted his katana into its
+                                        branch-like appearance, his slashes turn
+                                        into a light purple color. Kokushibo
+                                        also displays the ability to
+                                        exponentially increase the range of his
+                                        sword slash with his Moon-Dragon
+                                        Ringtail technique and shape his slashes
+                                        into a circular drill-like shape with
+                                        his Drilling Slashes, Moon Through
+                                        Bamboo Leaves technique.
+                                    </p>
+                                </div>
                             </div>
                         </section>
                     </div>
@@ -1610,7 +1723,7 @@ export default function Main({ refs }) {
                                 className="grid grid-cols-1 gap-3 show"
                                 id="General_content"
                             >
-                                <p>
+                                <div>
                                     <div className="float-right m-3 w-60">
                                         <img
                                             src="./src/assets/first.webp"
@@ -1619,20 +1732,25 @@ export default function Main({ refs }) {
                                             className="m-auto border-3 border-black"
                                         />
                                     </div>
-                                    <strong>
-                                        First Form: Dark Moon, Evening Palace
-                                        (壱いちノ型かた　闇やみ月づき・宵よいの宮みや
-                                        Ichi no kata: Yamizuki - Yoi no Miya?)
-                                    </strong>
-                                    &nbsp;- Kokushibo draws his katana and
-                                    performs a singular horizontal slash
-                                    following a crescent shape, creating
-                                    numerous chaotic crescent blades along its
-                                    path, before sheathing it back into his
-                                    scabbard. This technique is extremely
-                                    reminiscent of Iaijutsu.
-                                </p>
-                                <p>
+                                    <p>
+                                        {" "}
+                                        <strong>
+                                            First Form: Dark Moon, Evening
+                                            Palace
+                                            (壱いちノ型かた　闇やみ月づき・宵よいの宮みや
+                                            Ichi no kata: Yamizuki - Yoi no
+                                            Miya?)
+                                        </strong>
+                                        &nbsp;- Kokushibo draws his katana and
+                                        performs a singular horizontal slash
+                                        following a crescent shape, creating
+                                        numerous chaotic crescent blades along
+                                        its path, before sheathing it back into
+                                        his scabbard. This technique is
+                                        extremely reminiscent of Iaijutsu.
+                                    </p>
+                                </div>
+                                <div>
                                     <div className="float-left m-3 w-60">
                                         <img
                                             src="./src/assets/second.webp"
@@ -1641,17 +1759,20 @@ export default function Main({ refs }) {
                                             className="m-auto border-3 border-black"
                                         />
                                     </div>
-                                    <strong>
-                                        Second Form: Pearl Flower Moongazing
-                                        (弐にの型かた　珠しゅ華かノ弄ろう月げつ
-                                        Ni no kata: Shuka no Rōgetsu?)
-                                    </strong>
-                                    &nbsp;- Kokushibo performs three
-                                    crescent-shaped slashes while releasing a
-                                    multitude of crescent moon blades along with
-                                    them.
-                                </p>
-                                <p>
+                                    <p>
+                                        {" "}
+                                        <strong>
+                                            Second Form: Pearl Flower Moongazing
+                                            (弐にの型かた　珠しゅ華かノ弄ろう月げつ
+                                            Ni no kata: Shuka no Rōgetsu?)
+                                        </strong>
+                                        &nbsp;- Kokushibo performs three
+                                        crescent-shaped slashes while releasing
+                                        a multitude of crescent moon blades
+                                        along with them.
+                                    </p>
+                                </div>
+                                <div>
                                     <div className="float-right m-3 w-60">
                                         <img
                                             src="./src/assets/third.webp"
@@ -1660,17 +1781,21 @@ export default function Main({ refs }) {
                                             className="m-auto border-3 border-black"
                                         />
                                     </div>
-                                    <strong>
-                                        Third Form: Loathsome Moon, Chains
-                                        (参さんノ型かた　厭えん忌き月づき・銷つがり
-                                        San no kata: Enkizuki - Tsugari?)
-                                    </strong>
-                                    &nbsp;- Kokushibo performs two extremely
-                                    broad crescent-shaped slashes directly in
-                                    front of him, from which a storm of smaller
-                                    crescent moon blades are released.
-                                </p>
-                                <p>
+                                    <p>
+                                        {" "}
+                                        <strong>
+                                            Third Form: Loathsome Moon, Chains
+                                            (参さんノ型かた　厭えん忌き月づき・銷つがり
+                                            San no kata: Enkizuki - Tsugari?)
+                                        </strong>
+                                        &nbsp;- Kokushibo performs two extremely
+                                        broad crescent-shaped slashes directly
+                                        in front of him, from which a storm of
+                                        smaller crescent moon blades are
+                                        released.
+                                    </p>
+                                </div>
+                                <div>
                                     <div className="float-left m-3 w-60">
                                         <img
                                             src="./src/assets/fifth.webp"
@@ -1679,19 +1804,24 @@ export default function Main({ refs }) {
                                             className="m-auto border-3 border-black"
                                         />
                                     </div>
-                                    <strong>
-                                        Fifth Form: Moon Spirit Calamitous Eddy
-                                        (伍ごノ型かた 月げっ魄ぱく災さい渦か Go
-                                        no kata: Geppaku Saika?)
-                                    </strong>
-                                    &nbsp;- Kokushibo creates multiple long and
-                                    curved slashes layered over one another,
-                                    essentially creating a vortex of crescent
-                                    moon blades. As stated by Sanemi
-                                    Shinazugawa, this technique was performed
-                                    without Kokushibo swinging his katana.
-                                </p>
-                                <p>
+                                    <p>
+                                        {" "}
+                                        <strong>
+                                            Fifth Form: Moon Spirit Calamitous
+                                            Eddy (伍ごノ型かた
+                                            月げっ魄ぱく災さい渦か Go no kata:
+                                            Geppaku Saika?)
+                                        </strong>
+                                        &nbsp;- Kokushibo creates multiple long
+                                        and curved slashes layered over one
+                                        another, essentially creating a vortex
+                                        of crescent moon blades. As stated by
+                                        Sanemi Shinazugawa, this technique was
+                                        performed without Kokushibo swinging his
+                                        katana.
+                                    </p>
+                                </div>
+                                <div>
                                     <div className="float-right m-3 w-60">
                                         <img
                                             src="./src/assets/sixth.webp"
@@ -1700,19 +1830,23 @@ export default function Main({ refs }) {
                                             className="m-auto border-3 border-black"
                                         />
                                     </div>
-                                    <strong>
-                                        Sixth Form: Perpetual Night, Lonely Moon
-                                        - Incessant
-                                        (陸ろくノ型かた　常とこ夜よ孤こ月げつ・無む間けん
-                                        Roku no kata: Tokoyo Kogetsu - Muken?)
-                                    </strong>
-                                    &nbsp;- Kokushibo rapidly performs a
-                                    multitude of curved slashes several meters
-                                    in front of him that releases a wild barrage
-                                    of crescent moon blades capable of slicing
-                                    up the surroundings.
-                                </p>
-                                <p>
+                                    <p>
+                                        {" "}
+                                        <strong>
+                                            Sixth Form: Perpetual Night, Lonely
+                                            Moon - Incessant
+                                            (陸ろくノ型かた　常とこ夜よ孤こ月げつ・無む間けん
+                                            Roku no kata: Tokoyo Kogetsu -
+                                            Muken?)
+                                        </strong>
+                                        &nbsp;- Kokushibo rapidly performs a
+                                        multitude of curved slashes several
+                                        meters in front of him that releases a
+                                        wild barrage of crescent moon blades
+                                        capable of slicing up the surroundings.
+                                    </p>
+                                </div>
+                                <div>
                                     <div className="float-left m-3 w-60">
                                         <img
                                             src="./src/assets/seventh.webp"
@@ -1721,20 +1855,24 @@ export default function Main({ refs }) {
                                             className="m-auto border-3 border-black"
                                         />
                                     </div>
-                                    <strong>
-                                        Seventh Form: Mirror of Misfortune,
-                                        Moonlit
-                                        (漆しちノ型かた　厄やっ鏡きょう・月づき映ばえ
-                                        Shichi no kata: Yakkyō - Zukibae?)
-                                    </strong>
-                                    &nbsp;- Using his altered katana, Kokushibo
-                                    performs a frontal crescent-shaped slash
-                                    with couples of crescent moon blades, that
-                                    unleashes numerous straight slashes with
-                                    crescent moons interlaced, that expand
-                                    outward through the ground.
-                                </p>
-                                <p>
+                                    <p>
+                                        {" "}
+                                        <strong>
+                                            Seventh Form: Mirror of Misfortune,
+                                            Moonlit
+                                            (漆しちノ型かた　厄やっ鏡きょう・月づき映ばえ
+                                            Shichi no kata: Yakkyō - Zukibae?)
+                                        </strong>
+                                        &nbsp;- Using his altered katana,
+                                        Kokushibo performs a frontal
+                                        crescent-shaped slash with couples of
+                                        crescent moon blades, that unleashes
+                                        numerous straight slashes with crescent
+                                        moons interlaced, that expand outward
+                                        through the ground.
+                                    </p>
+                                </div>
+                                <div>
                                     <div className="float-right m-3 w-60">
                                         <img
                                             src="./src/assets/eighth.webp"
@@ -1743,17 +1881,21 @@ export default function Main({ refs }) {
                                             className="m-auto border-3 border-black"
                                         />
                                     </div>
-                                    <strong>
-                                        Eighth Form: Moon-Dragon Ringtail
-                                        (捌はちノ型かた　月げつ龍りゆう輪りん尾び
-                                        Hachi no kata: Getsuryū Rinbi?)
-                                    </strong>
-                                    &nbsp;- Using his altered katana, Kokushibo
-                                    performs a extremely wide, long-ranged
-                                    curved slash that leaves dozens of crescent
-                                    moon blades along its path.
-                                </p>
-                                <p>
+                                    <p>
+                                        {" "}
+                                        <strong>
+                                            Eighth Form: Moon-Dragon Ringtail
+                                            (捌はちノ型かた　月げつ龍りゆう輪りん尾び
+                                            Hachi no kata: Getsuryū Rinbi?)
+                                        </strong>
+                                        &nbsp;- Using his altered katana,
+                                        Kokushibo performs a extremely wide,
+                                        long-ranged curved slash that leaves
+                                        dozens of crescent moon blades along its
+                                        path.
+                                    </p>
+                                </div>
+                                <div>
                                     <div className="float-left m-3 w-60">
                                         <img
                                             src="./src/assets/ninth.webp"
@@ -1762,17 +1904,21 @@ export default function Main({ refs }) {
                                             className="m-auto border-3 border-black"
                                         />
                                     </div>
-                                    <strong>
-                                        Ninth Form: Waning Moonswaths
-                                        (玖くノ型かた　降くだり月づき・連れん面めん
-                                        Ku no kata: Kudarizuki - Renmen?)
-                                    </strong>
-                                    &nbsp;- Using his altered katana, Kokushibo
-                                    performs multiple downward curved slashes,
-                                    all in close proximity, that leave numerous
-                                    crescent moon blades along its path.
-                                </p>
-                                <p>
+                                    <p>
+                                        {" "}
+                                        <strong>
+                                            Ninth Form: Waning Moonswaths
+                                            (玖くノ型かた　降くだり月づき・連れん面めん
+                                            Ku no kata: Kudarizuki - Renmen?)
+                                        </strong>
+                                        &nbsp;- Using his altered katana,
+                                        Kokushibo performs multiple downward
+                                        curved slashes, all in close proximity,
+                                        that leave numerous crescent moon blades
+                                        along its path.
+                                    </p>
+                                </div>
+                                <div>
                                     <div className="float-right m-3 w-60">
                                         <img
                                             src="./src/assets/tenth.webp"
@@ -1781,18 +1927,20 @@ export default function Main({ refs }) {
                                             className="m-auto border-3 border-black"
                                         />
                                     </div>
-                                    <strong>
-                                        Tenth Form: Drilling Slashes, Moon
-                                        Through Bamboo Leaves
-                                        (拾じゅうノ型かた　穿せん面めん斬ざん・蘿ら月げつ
-                                        Jū no kata: Senmenzan - Ragetsu?)
-                                    </strong>
-                                    &nbsp;- Using his altered katana, Kokushibo
-                                    creates three rotating circular saw-like
-                                    slashes with crescent moon blades following
-                                    their path.
-                                </p>
-                                <p>
+                                    <p>
+                                        <strong>
+                                            Tenth Form: Drilling Slashes, Moon
+                                            Through Bamboo Leaves
+                                            (拾じゅうノ型かた　穿せん面めん斬ざん・蘿ら月げつ
+                                            Jū no kata: Senmenzan - Ragetsu?)
+                                        </strong>
+                                        &nbsp;- Using his altered katana,
+                                        Kokushibo creates three rotating
+                                        circular saw-like slashes with crescent
+                                        moon blades following their path.
+                                    </p>
+                                </div>
+                                <div>
                                     <div className="float-left m-3 w-60">
                                         <img
                                             src="./src/assets/fourteenth.webp"
@@ -1801,25 +1949,28 @@ export default function Main({ refs }) {
                                             className="m-auto border-3 border-black"
                                         />
                                     </div>
-                                    <strong>
-                                        Fourteenth Form: Catastrophe, Tenman
-                                        Crescent Moon
-                                        (拾じゅう肆しノ型かた　兇きょう変へん・天てん満まん繊せん月げつ
-                                        Jū Shi no kata: Kyōhen - Tenman
-                                        Sengetsu?)
-                                    </strong>
-                                    &nbsp;- Using his altered katana, Kokushibo
-                                    performs a multitude of curved circular
-                                    slashes which expand outward in every
-                                    direction that incrementally grow in size,
-                                    essentially creating an omni-directional
-                                    vortex of crescent moon blades that whirls
-                                    around him. This technique is visually
-                                    near-identical to Fifth Form: Moon Spirit
-                                    Calamitous Eddy, albeit with much greater
-                                    range.
-                                </p>
-                                <p>
+                                    <p>
+                                        {" "}
+                                        <strong>
+                                            Fourteenth Form: Catastrophe, Tenman
+                                            Crescent Moon
+                                            (拾じゅう肆しノ型かた　兇きょう変へん・天てん満まん繊せん月げつ
+                                            Jū Shi no kata: Kyōhen - Tenman
+                                            Sengetsu?)
+                                        </strong>
+                                        &nbsp;- Using his altered katana,
+                                        Kokushibo performs a multitude of curved
+                                        circular slashes which expand outward in
+                                        every direction that incrementally grow
+                                        in size, essentially creating an
+                                        omni-directional vortex of crescent moon
+                                        blades that whirls around him. This
+                                        technique is visually near-identical to
+                                        Fifth Form: Moon Spirit Calamitous Eddy,
+                                        albeit with much greater range.
+                                    </p>
+                                </div>
+                                <div>
                                     <div className="float-right m-3 w-60">
                                         <img
                                             src="./src/assets/sixteenth.webp"
@@ -1828,17 +1979,22 @@ export default function Main({ refs }) {
                                             className="m-auto border-3 border-black"
                                         />
                                     </div>
-                                    <strong>
-                                        Sixteenth Form: Moonbow, Half Moon
-                                        (拾じゅう陸ろくノ型かた　月虹げっこう・片かた割われ月づき
-                                        Jū Roku no kata: Gekkō - Katawarezuki?)
-                                    </strong>
-                                    &nbsp;- Using his altered katana, Kokushibo
-                                    swings outward, sending six curved slashes
-                                    crashing down in front of him with numerous
-                                    crescent moon blades, powerful enough to
-                                    leave craters in their wake.
-                                </p>
+                                    <p>
+                                        {" "}
+                                        <strong>
+                                            Sixteenth Form: Moonbow, Half Moon
+                                            (拾じゅう陸ろくノ型かた　月虹げっこう・片かた割われ月づき
+                                            Jū Roku no kata: Gekkō -
+                                            Katawarezuki?)
+                                        </strong>
+                                        &nbsp;- Using his altered katana,
+                                        Kokushibo swings outward, sending six
+                                        curved slashes crashing down in front of
+                                        him with numerous crescent moon blades,
+                                        powerful enough to leave craters in
+                                        their wake.
+                                    </p>
+                                </div>
                             </div>
                         </section>
                     </div>
@@ -2110,7 +2266,7 @@ export default function Main({ refs }) {
                                 "eye" (牟ぼう bō?).
                             </li>
                             <li className="list-disc ml-10">
-                                <li>
+                                <p>
                                     Kokushibo's human family name contains the
                                     Kun'yomi reading of the kanji for "to
                                     inherit, succeed" (継つぎ tsugi?) and
@@ -2121,7 +2277,7 @@ export default function Main({ refs }) {
                                     victory" (勝かつ katsu?). His father was the
                                     one who named him, as he believed Michikatsu
                                     would be strong and successful.
-                                </li>
+                                </p>
                             </li>
                             <li>
                                 Kokushibo has been challenged three times for
