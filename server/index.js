@@ -43,13 +43,24 @@ const UserSchema = new mongoose.Schema({
 //mongoose.model("name of the mongoose file", Schema that you want to use)
 const User = mongoose.model("comments", UserSchema);
 
-// Express setup
+// Local Express setup
+// app.use(express.json());
+// app.use(
+//     cors({
+//         origin: `http://localhost:5173`, // This is the url you are hosting from. Make sure the port is correct
+//     }),
+// );
+
+//Build Express setup
 app.use(express.json());
 app.use(
     cors({
-        origin: `http://localhost:5173`, // This is the url you are hosting from. Make sure the port is correct
+        origin: `https://clevelandiii.github.io/Kokushibo-Fan-Website/`, // This is the url you are hosting from. Make sure the port is correct
     }),
 );
+
+
+
 
 // Sample route to check if the backend is working
 app.get("/", (req, resp) => {
