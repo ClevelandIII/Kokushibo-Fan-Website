@@ -4,10 +4,19 @@ import cors from "cors";
 
 const app = express();
 
-const connection = process.env.VITE_MONGODB_URI;
-const port = process.env.VITE_PORT;
+let connection = import.meta.env.VITE_MONGODB_URI;
 
-console.log(connection);
+if (connection == null) {
+    connection = process.env.VITE_MONGODB_URI;
+}
+
+let port = import.meta.env.VITE_PORT;
+
+if (port == null) {
+    port = process.env.VITE_PORT;
+}
+
+console.log(port != null ? "good!" : "bad");
 
 // MongoDB connection
 mongoose
@@ -69,13 +78,13 @@ app.post("/register", async (req, resp) => {
 });
 
 //Get comments
-app.get('/register', async (req, res) => {
+app.get("/register", async (req, res) => {
     try {
         const user = await User.find();
         res.json(user);
     } catch (err) {
         res.status(500).json({
-            message: err.message
+            message: err.message,
         });
     }
 });
