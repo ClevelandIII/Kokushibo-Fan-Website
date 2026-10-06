@@ -37,7 +37,7 @@ export default function Main({ refs }) {
         let image_set = e.target.id;
 
         if (image_set == "anime") {
-            image.src = "./src/assets/_Anime.webp";
+            image.src = "./src/assets/anime.webp";
         }
         if (image_set == "manga") {
             image.src = "./src/assets/_Manga.webp";
@@ -70,7 +70,7 @@ export default function Main({ refs }) {
                             </div>
                         </div>
                         <img
-                            src="../src/assets/_anime.webp"
+                            src="../src/assets/anime.webp"
                             alt="Anime Kokushibo facing back"
                             className="border-3 border-black bg-koku-dark-purple"
                             width="100%"

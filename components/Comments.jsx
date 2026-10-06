@@ -9,10 +9,10 @@ export default function Comments() {
     const [updateComments, setUpdateComments] = useState(true);
 
     //local url
-    //const apiUrl = "http://localhost:5050";
+    const apiUrl = "http://localhost:5050";
 
     //deployment url
-    const apiUrl = process.env.VITE_URL;
+    //const apiUrl = process.env.VITE_URL;
 
     useEffect(() => {
         axios

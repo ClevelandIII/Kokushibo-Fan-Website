@@ -4,17 +4,11 @@ import cors from "cors";
 
 const app = express();
 
-let connection = process.env.VITE_MONGODB_URI;
+const connection = import.meta.env.VITE_MONGODB_URI;
+//const connection = process.env.VITE_MONGODB_URI;
 
-if (connection == null) {
-    connection = import.meta.env.VITE_MONGODB_URI;
-}
-
-let port = process.env.VITE_PORT;
-
-if (port == null) {
-    port = import.meta.env.VITE_PORT;
-}
+const port = import.meta.env.VITE_PORT;
+//const port = process.env.VITE_PORT;
 
 console.log(port != null ? "good!" : "bad");
 
@@ -43,24 +37,21 @@ const UserSchema = new mongoose.Schema({
 //mongoose.model("name of the mongoose file", Schema that you want to use)
 const User = mongoose.model("comments", UserSchema);
 
-// Local Express setup
-// app.use(express.json());
-// app.use(
-//     cors({
-//         origin: `http://localhost:5173`, // This is the url you are hosting from. Make sure the port is correct
-//     }),
-// );
-
-//Build Express setup
+//Local Express setup
 app.use(express.json());
 app.use(
     cors({
-        origin: `https://clevelandiii.github.io/Kokushibo-Fan-Website/`, // This is the url you are hosting from. Make sure the port is correct
+        origin: `http://localhost:5173`, // This is the url you are hosting from. Make sure the port is correct
     }),
 );
 
-
-
+// //Build Express setup
+// app.use(express.json());
+// app.use(
+//     cors({
+//         origin: `https://clevelandiii.github.io/Kokushibo-Fan-Website/`, // This is the url you are hosting from. Make sure the port is correct
+//     }),
+// );
 
 // Sample route to check if the backend is working
 app.get("/", (req, resp) => {
