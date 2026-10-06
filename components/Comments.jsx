@@ -8,7 +8,11 @@ export default function Comments() {
     const [comments, setComments] = useState([]);
     const [updateComments, setUpdateComments] = useState(true);
 
-    const apiUrl = "http://localhost:5050";
+    //local url
+    //const apiUrl = "http://localhost:5050";
+
+    //deployment url
+    const apiUrl = "https://kokushibo-fan-website.onrender.com"
 
     useEffect(() => {
         axios
