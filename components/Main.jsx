@@ -1,6 +1,9 @@
 import Tree from "./Tree";
 import Comments from "../components/Comments";
 
+//images
+import _Anime from "../src/assets/_Anime.webp";
+
 export default function Main({ refs }) {
     function close(e) {
         let id = e.target.id;
@@ -37,7 +40,7 @@ export default function Main({ refs }) {
         let image_set = e.target.id;
 
         if (image_set == "anime") {
-            image.src = "./src/assets/_Anime.webp";
+            image.src = {_Anime};
         }
         if (image_set == "manga") {
             image.src = "./src/assets/_Manga.webp";
@@ -70,7 +73,7 @@ export default function Main({ refs }) {
                             </div>
                         </div>
                         <img
-                            src="./src/assets/_Anime.webp"
+                            src={_Anime}
                             alt="Anime Kokushibo facing back"
                             className="border-3 border-black bg-koku-dark-purple"
                             width="100%"
