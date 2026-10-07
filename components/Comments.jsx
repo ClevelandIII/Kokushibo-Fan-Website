@@ -9,7 +9,8 @@ export default function Comments() {
     const [updateComments, setUpdateComments] = useState(true);
 
     //deployment url
-    const apiUrl = "https://kokushibo-fan-website.onrender.com";
+    //const apiUrl = "https://kokushibo-fan-website.onrender.com";
+    const apiUrl = "";
 
     useEffect(() => {
         axios
@@ -84,7 +85,7 @@ export default function Comments() {
                         </div>
                     </form>
 
-                    {comments.map((comment) => (
+                    {/* {comments.map((comment) => (
                         <div
                             className="bg-koku-dark-purple border-3 p-5 text-white border-black grid grid-cols-1 gap-2"
                             key={comment._id}
@@ -94,7 +95,7 @@ export default function Comments() {
                             </h3>
                             <p>{comment.text}</p>
                         </div>
-                    ))}
+                    ))} */}
                 </section>
                 <section className="w-1/5"></section>
             </div>
