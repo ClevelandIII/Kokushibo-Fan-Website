@@ -2,7 +2,9 @@ import Tree from "./Tree";
 import Comments from "../components/Comments";
 
 //images
-import _Anime from "../src/assets/_Anime.webp";
+import Anime from "../src/assets/_Anime.webp";
+import Manga from "../src/assets/_Manga.webp";
+import Live from "../src/assets/_Live.webp";
 
 export default function Main({ refs }) {
     function close(e) {
@@ -40,13 +42,13 @@ export default function Main({ refs }) {
         let image_set = e.target.id;
 
         if (image_set == "anime") {
-            image.src = {_Anime};
+            image.src = Anime;
         }
         if (image_set == "manga") {
-            image.src = "./src/assets/_Manga.webp";
+            image.src = Manga;
         }
         if (image_set == "stage") {
-            image.src = "./src/assets/_Live.webp";
+            image.src = Live;
         }
     }
 
@@ -73,7 +75,7 @@ export default function Main({ refs }) {
                             </div>
                         </div>
                         <img
-                            src={_Anime}
+                            src={Anime}
                             alt="Anime Kokushibo facing back"
                             className="border-3 border-black bg-koku-dark-purple"
                             width="100%"
