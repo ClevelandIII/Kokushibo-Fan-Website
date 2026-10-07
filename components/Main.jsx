@@ -17,7 +17,7 @@ import Katana_Full from "../src/assets/katana_full.webp";
 import Katana_Manga from "../src/assets/katana_manga.webp";
 import Katana_Og from "../src/assets/katana_og.webp";
 import Koku_Angry from "../src/assets/koku_angry.webp";
-import Koku_Anime_Full from "../src/assets/koku_anime_full.webp";
+import Koku_Anime_Full from "../src/assets/Koku_anime_full.webp";
 import Koku_Arm from "../src/assets/koku_arm.webp";
 import Koku_Aura from "../src/assets/koku_aura.webp";
 import Koku_Blades from "../src/assets/koku_blades.webp";
