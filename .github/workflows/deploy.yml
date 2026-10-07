@@ -43,6 +43,7 @@ jobs:
         env:
           VITE_MONGODB_URI: ${{ secrets.VITE_MONGODB_URI }}
           VITE_PORT: ${{ secrets.VITE_PORT }}
+          VITE_URL: ${{ secrets.VITE_URL }}
       - name: Setup Pages
         uses: actions/configure-pages@v6
       - name: Upload artifact
