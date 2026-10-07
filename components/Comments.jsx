@@ -9,7 +9,7 @@ export default function Comments() {
     const [updateComments, setUpdateComments] = useState(true);
 
     //deployment url
-    const apiUrl = process.env.VITE_URL;
+    const apiUrl = "https://kokushibo-fan-website.onrender.com";
 
     useEffect(() => {
         axios

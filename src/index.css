@@ -23,6 +23,11 @@
     line-height: 1.5;
 }
 
+#root {
+    background-image: url("assets/koku_print_2.png");
+    background-color: #371645;
+}
+
 th,
 td {
     padding: 0.5rem;

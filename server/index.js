@@ -4,10 +4,9 @@ import cors from "cors";
 
 const app = express();
 
-
 const connection = process.env.VITE_MONGODB_URI;
 const port = process.env.VITE_PORT;
-const origin = "https://clevelandiii.github.io/Kokushibo-Fan-Website/"
+const origin = process.env.VITE_URL;
 
 console.log(port != null ? "good!" : "bad");
 
@@ -43,7 +42,6 @@ app.use(
         origin: origin, // This is the url you are hosting from. Make sure the port is correct
     }),
 );
-
 
 // Sample route to check if the backend is working
 app.get("/", (req, resp) => {
