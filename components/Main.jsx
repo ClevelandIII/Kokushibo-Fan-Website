@@ -5,6 +5,44 @@ import Comments from "../components/Comments";
 import Anime from "../src/assets/_Anime.webp";
 import Manga from "../src/assets/_Manga.webp";
 import Live from "../src/assets/_Live.webp";
+import Down from "../src/assets/down.svg";
+import Eighth from "../src/assets/eighth.webp";
+import Fifth from "../src/assets/fifth.webp";
+import First from "../src/assets/first.webp";
+import Fourteenth from "../src/assets/fourteenth.webp";
+import Human_Adult_Koku from "../src/assets/human_adult_koku.webp";
+import Human_Koku from "../src/assets/human_koku.webp";
+import Katana_Anime from "../src/assets/katana_anime.webp";
+import Katana_Full from "../src/assets/katana_full.webp";
+import Katana_Manga from "../src/assets/katana_manga.webp";
+import Katana_Og from "../src/assets/katana_og.webp";
+import Koku_Angry from "../src/assets/koku_angry.webp";
+import Koku_Anime_Full from "../src/assets/koku_anime_full.webp";
+import Koku_Arm from "../src/assets/koku_arm.webp";
+import Koku_Aura from "../src/assets/koku_aura.webp";
+import Koku_Blades from "../src/assets/koku_blades.webp";
+import Koku_Crescent from "../src/assets/koku_crescent.webp";
+import Koku_Cry from "../src/assets/koku_cry.webp";
+import Koku_Foot from "../src/assets/koku_foot.webp";
+import Koku_Gyomei from "../src/assets/koku_gyomei.webp";
+import Koku_Hand from "../src/assets/koku_hand.webp";
+import Koku_Katana from "../src/assets/koku_katana.webp";
+import Koku_Kirk from "../src/assets/koku_kirk.webp";
+import Koku_Monster from "../src/assets/koku_monster.webp";
+import Koku_Moons from "../src/assets/koku_moons.webp";
+import Koku_Own from "../src/assets/koku_own.webp";
+import Koku_Pillar from "../src/assets/koku_pillar.webp";
+import Koku_Rage from "../src/assets/koku_rage.webp";
+import Koku_Sit from "../src/assets/koku_sit.webp";
+import Koku_Suprise from "../src/assets/koku_suprise.webp";
+import Koku_Talk from "../src/assets/koku_talk.webp";
+import Ninth from "../src/assets/ninth.webp";
+import Second from "../src/assets/second.webp";
+import Seventh from "../src/assets/seventh.webp";
+import Sixteenth from "../src/assets/sixteenth.webp";
+import Sixth from "../src/assets/sixth.webp";
+import Tenth from "../src/assets/tenth.webp";
+import Third from "../src/assets/third.webp";
 
 export default function Main({ refs }) {
     function close(e) {
@@ -275,7 +313,7 @@ export default function Main({ refs }) {
                         <div className="flex justify-between">
                             <h2 className="text-xl font-comic">Appearance</h2>
                             <img
-                                src="./src/assets/down.svg"
+                                src={Down}
                                 alt=""
                                 width="20px"
                                 className="close"
@@ -366,7 +404,7 @@ export default function Main({ refs }) {
                         <div className="flex justify-between">
                             <h2 className="text-xl font-comic">Gallery</h2>
                             <img
-                                src="./src/assets/down.svg"
+                                src={Down}
                                 alt=""
                                 width="20px"
                                 className="close"
@@ -382,7 +420,7 @@ export default function Main({ refs }) {
                     >
                         <div className="flex justify-center flex-wrap">
                             <img
-                                src="./src/assets/human_koku.webp"
+                                src={Human_Koku}
                                 alt="Human child Kokushibo"
                                 className="h-60 m-auto border-3 border-black"
                             />
@@ -392,7 +430,7 @@ export default function Main({ refs }) {
                         </div>
                         <div className="flex justify-center flex-wrap">
                             <img
-                                src="./src/assets/human_adult_koku.webp"
+                                src={Human_Adult_Koku}
                                 alt="Human adult Kokushibo"
                                 className="h-60 m-auto border-3 border-black"
                             />
@@ -404,7 +442,7 @@ export default function Main({ refs }) {
 
                         <div className="flex justify-center flex-wrap">
                             <img
-                                src="./src/assets/koku_anime_full.webp"
+                                src={Koku_Anime_Full}
                                 alt="Anime full body Kokushibo"
                                 className="h-60 m-auto border-3 border-black"
                             />
@@ -415,7 +453,7 @@ export default function Main({ refs }) {
 
                         <div className="flex justify-center flex-wrap">
                             <img
-                                src="./src/assets/koku_blades.webp"
+                                src={Koku_Blades}
                                 alt="Kokushibo with several blades coming out of his body"
                                 className="h-60 m-auto border-3 border-black"
                             />
@@ -427,7 +465,7 @@ export default function Main({ refs }) {
 
                         <div className="flex justify-center flex-wrap">
                             <img
-                                src="./src/assets/koku_monster.webp"
+                                src={Koku_Monster}
                                 alt="Kokushibo's monster form"
                                 className="h-60 m-auto border-3 border-black"
                             />
@@ -447,7 +485,7 @@ export default function Main({ refs }) {
                         <div className="flex justify-between">
                             <h2 className="text-xl font-comic">Personality</h2>
                             <img
-                                src="./src/assets/down.svg"
+                                src={Down}
                                 alt=""
                                 width="20px"
                                 className="close"
@@ -466,7 +504,7 @@ export default function Main({ refs }) {
                         <div>
                             <div className="float-right m-3 w-60">
                                 <img
-                                    src="./src/assets/koku_sit.webp"
+                                    src={Koku_Sit}
                                     width="200px"
                                     alt=""
                                     className="m-auto border-3 border-black"
@@ -521,7 +559,7 @@ export default function Main({ refs }) {
                         <div>
                             <div className="float-left m-3 w-60">
                                 <img
-                                    src="./src/assets/koku_angry.webp"
+                                    src={Koku_Angry}
                                     width="200px"
                                     alt=""
                                     className="m-auto border-3 border-black"
@@ -562,7 +600,7 @@ export default function Main({ refs }) {
                         <div>
                             <div className="float-right w-60">
                                 <img
-                                    src="./src/assets/koku_talk.webp"
+                                    src={Koku_Talk}
                                     width="200px"
                                     alt=""
                                     className="m-auto border-3 border-black"
@@ -604,7 +642,7 @@ export default function Main({ refs }) {
                         <div>
                             <div className="float-left m-3 w-60">
                                 <img
-                                    src="./src/assets/koku_rage.webp"
+                                    src={Koku_Rage}
                                     width="200px"
                                     alt=""
                                     className="m-auto border-3 border-black"
@@ -654,7 +692,7 @@ export default function Main({ refs }) {
                         <div>
                             <div className="float-right w-60">
                                 <img
-                                    src="./src/assets/koku_cry.webp"
+                                    src={Koku_Cry}
                                     width="200px"
                                     alt=""
                                     className="m-auto border-3 border-black"
@@ -722,7 +760,7 @@ export default function Main({ refs }) {
                         <div className="flex justify-between">
                             <h2 className="text-xl font-comic">Abilities</h2>
                             <img
-                                src="./src/assets/down.svg"
+                                src={Down}
                                 alt=""
                                 width="20px"
                                 className="close"
@@ -746,7 +784,7 @@ export default function Main({ refs }) {
                                         Overall Abilities
                                     </h3>
                                     <img
-                                        src="./src/assets/down.svg"
+                                        src={Down}
                                         alt=""
                                         width="20px"
                                         className="close"
@@ -763,7 +801,7 @@ export default function Main({ refs }) {
                                 <div>
                                     <div className="float-right m-3 w-60">
                                         <img
-                                            src="./src/assets/koku_hand.webp"
+                                            src={Koku_Hand}
                                             width="200px"
                                             alt=""
                                             className="m-auto border-3 border-black"
@@ -835,7 +873,7 @@ export default function Main({ refs }) {
                                 <div>
                                     <div className="float-left m-3 w-60">
                                         <img
-                                            src="./src/assets/koku_moons.webp"
+                                            src={Koku_Moons}
                                             width="200px"
                                             alt=""
                                             className="m-auto border-3 border-black"
@@ -917,7 +955,7 @@ export default function Main({ refs }) {
                                 <div>
                                     <div className="float-right m-3 w-60">
                                         <img
-                                            src="./src/assets/koku_suprise.webp"
+                                            src={Koku_Suprise}
                                             width="200px"
                                             alt=""
                                             className="m-auto border-3 border-black"
@@ -964,7 +1002,7 @@ export default function Main({ refs }) {
                                         Demon Abilities
                                     </h3>
                                     <img
-                                        src="./src/assets/down.svg"
+                                        src={Down}
                                         alt=""
                                         width="20px"
                                         className="close"
@@ -1021,7 +1059,7 @@ export default function Main({ refs }) {
                                     <li className="list-disc">
                                         <div className="float-right m-3 w-60">
                                             <img
-                                                src="./src/assets/koku_katana.webp"
+                                                src={Koku_Katana}
                                                 width="200px"
                                                 alt=""
                                                 className="m-auto border-3 border-black"
@@ -1111,7 +1149,7 @@ export default function Main({ refs }) {
                                         Demon Slayer Abilities
                                     </h3>
                                     <img
-                                        src="./src/assets/down.svg"
+                                        src={Down}
                                         alt=""
                                         width="20px"
                                         className="close"
@@ -1142,7 +1180,7 @@ export default function Main({ refs }) {
                                     <li className="list-disc">
                                         <div className="float-right m-3 w-60">
                                             <img
-                                                src="./src/assets/koku_gyomei.webp"
+                                                src={Koku_Gyomei}
                                                 width="200px"
                                                 alt=""
                                                 className="m-auto border-3 border-black"
@@ -1180,7 +1218,7 @@ export default function Main({ refs }) {
                                         Physical Abilities
                                     </h3>
                                     <img
-                                        src="./src/assets/down.svg"
+                                        src={Down}
                                         alt=""
                                         width="20px"
                                         className="close"
@@ -1197,7 +1235,7 @@ export default function Main({ refs }) {
                                 <div>
                                     <div className="float-left m-3 w-60">
                                         <img
-                                            src="./src/assets/koku_kirk.webp"
+                                            src={Koku_Kirk}
                                             width="200px"
                                             alt=""
                                             className="m-auto border-3 border-black"
@@ -1234,7 +1272,7 @@ export default function Main({ refs }) {
                                 <div>
                                     <div className="float-right m-3 w-60">
                                         <img
-                                            src="./src/assets/koku_arm.webp"
+                                            src={Koku_Arm}
                                             width="200px"
                                             alt=""
                                             className="m-auto border-3 border-black"
@@ -1282,7 +1320,7 @@ export default function Main({ refs }) {
                                 <div>
                                     <div className="float-left m-3 w-60">
                                         <img
-                                            src="./src/assets/koku_own.webp"
+                                            src={Koku_Own}
                                             width="200px"
                                             alt=""
                                             className="m-auto border-3 border-black"
@@ -1335,7 +1373,7 @@ export default function Main({ refs }) {
                                 <div>
                                     <div className="float-right m-3 w-60">
                                         <img
-                                            src="./src/assets/koku_foot.webp"
+                                            src={Koku_Foot}
                                             width="200px"
                                             alt=""
                                             className="m-auto border-3 border-black"
@@ -1400,7 +1438,7 @@ export default function Main({ refs }) {
                                         Supernatural Abilities
                                     </h3>
                                     <img
-                                        src="./src/assets/down.svg"
+                                        src={Down}
                                         alt=""
                                         width="20px"
                                         className="close"
@@ -1430,7 +1468,7 @@ export default function Main({ refs }) {
                                 <div>
                                     <div className="float-right m-3 w-60">
                                         <img
-                                            src="./src/assets/koku_aura.webp"
+                                            src={Koku_Aura}
                                             width="200px"
                                             alt=""
                                             className="m-auto border-3 border-black"
@@ -1467,7 +1505,7 @@ export default function Main({ refs }) {
                                 Fighting Style
                             </h2>
                             <img
-                                src="./src/assets/down.svg"
+                                src={Down}
                                 alt=""
                                 width="20px"
                                 className="close"
@@ -1491,7 +1529,7 @@ export default function Main({ refs }) {
                                         General Skills
                                     </h3>
                                     <img
-                                        src="./src/assets/down.svg"
+                                        src={Down}
                                         alt=""
                                         width="20px"
                                         className="close"
@@ -1508,7 +1546,7 @@ export default function Main({ refs }) {
                                 <div>
                                     <div className="float-left m-3 w-60">
                                         <img
-                                            src="./src/assets/koku_pillar.webp"
+                                            src={Koku_Pillar}
                                             width="200px"
                                             alt=""
                                             className="m-auto border-3 border-black"
@@ -1568,7 +1606,7 @@ export default function Main({ refs }) {
                                         Breathing Style
                                     </h3>
                                     <img
-                                        src="./src/assets/down.svg"
+                                        src={Down}
                                         alt=""
                                         width="20px"
                                         className="close"
@@ -1609,7 +1647,7 @@ export default function Main({ refs }) {
                                         Blood Demon Art
                                     </h3>
                                     <img
-                                        src="./src/assets/down.svg"
+                                        src={Down}
                                         alt=""
                                         width="20px"
                                         className="close"
@@ -1626,7 +1664,7 @@ export default function Main({ refs }) {
                                 <div>
                                     <div className="float-right m-3 w-60">
                                         <img
-                                            src="./src/assets/koku_crescent.webp"
+                                            src={Koku_Crescent}
                                             width="200px"
                                             alt=""
                                             className="m-auto border-3 border-black"
@@ -1707,7 +1745,7 @@ export default function Main({ refs }) {
                         <div className="flex justify-between">
                             <h2 className="text-xl font-comic">Techniques</h2>
                             <img
-                                src="./src/assets/down.svg"
+                                src={Down}
                                 alt=""
                                 width="20px"
                                 className="close"
@@ -1731,7 +1769,7 @@ export default function Main({ refs }) {
                                 <div>
                                     <div className="float-right m-3 w-60">
                                         <img
-                                            src="./src/assets/first.webp"
+                                            src={First}
                                             width="200px"
                                             alt=""
                                             className="m-auto border-3 border-black"
@@ -1758,7 +1796,7 @@ export default function Main({ refs }) {
                                 <div>
                                     <div className="float-left m-3 w-60">
                                         <img
-                                            src="./src/assets/second.webp"
+                                            src={Second}
                                             width="200px"
                                             alt=""
                                             className="m-auto border-3 border-black"
@@ -1780,7 +1818,7 @@ export default function Main({ refs }) {
                                 <div>
                                     <div className="float-right m-3 w-60">
                                         <img
-                                            src="./src/assets/third.webp"
+                                            src={Third}
                                             width="200px"
                                             alt=""
                                             className="m-auto border-3 border-black"
@@ -1803,7 +1841,7 @@ export default function Main({ refs }) {
                                 <div>
                                     <div className="float-left m-3 w-60">
                                         <img
-                                            src="./src/assets/fifth.webp"
+                                            src={Fifth}
                                             width="200px"
                                             alt=""
                                             className="m-auto border-3 border-black"
@@ -1829,7 +1867,7 @@ export default function Main({ refs }) {
                                 <div>
                                     <div className="float-right m-3 w-60">
                                         <img
-                                            src="./src/assets/sixth.webp"
+                                            src={Sixth}
                                             width="200px"
                                             alt=""
                                             className="m-auto border-3 border-black"
@@ -1854,7 +1892,7 @@ export default function Main({ refs }) {
                                 <div>
                                     <div className="float-left m-3 w-60">
                                         <img
-                                            src="./src/assets/seventh.webp"
+                                            src={Seventh}
                                             width="200px"
                                             alt=""
                                             className="m-auto border-3 border-black"
@@ -1880,7 +1918,7 @@ export default function Main({ refs }) {
                                 <div>
                                     <div className="float-right m-3 w-60">
                                         <img
-                                            src="./src/assets/eighth.webp"
+                                            src={Eighth}
                                             width="200px"
                                             alt=""
                                             className="m-auto border-3 border-black"
@@ -1903,7 +1941,7 @@ export default function Main({ refs }) {
                                 <div>
                                     <div className="float-left m-3 w-60">
                                         <img
-                                            src="./src/assets/ninth.webp"
+                                            src={Ninth}
                                             width="200px"
                                             alt=""
                                             className="m-auto border-3 border-black"
@@ -1926,7 +1964,7 @@ export default function Main({ refs }) {
                                 <div>
                                     <div className="float-right m-3 w-60">
                                         <img
-                                            src="./src/assets/tenth.webp"
+                                            src={Tenth}
                                             width="200px"
                                             alt=""
                                             className="m-auto border-3 border-black"
@@ -1948,7 +1986,7 @@ export default function Main({ refs }) {
                                 <div>
                                     <div className="float-left m-3 w-60">
                                         <img
-                                            src="./src/assets/fourteenth.webp"
+                                            src={Fourteenth}
                                             width="200px"
                                             alt=""
                                             className="m-auto border-3 border-black"
@@ -1978,7 +2016,7 @@ export default function Main({ refs }) {
                                 <div>
                                     <div className="float-right m-3 w-60">
                                         <img
-                                            src="./src/assets/sixteenth.webp"
+                                            src={Sixteenth}
                                             width="200px"
                                             alt=""
                                             className="m-auto border-3 border-black"
@@ -2013,7 +2051,7 @@ export default function Main({ refs }) {
                         <div className="flex justify-between">
                             <h2 className="text-xl font-comic">Equipment</h2>
                             <img
-                                src="./src/assets/down.svg"
+                                src={Down}
                                 alt=""
                                 width="20px"
                                 className="close"
@@ -2041,7 +2079,7 @@ export default function Main({ refs }) {
                                             Equipment
                                         </h3>
                                         <img
-                                            src="./src/assets/down.svg"
+                                            src={Down}
                                             alt=""
                                             width="20px"
                                             className="close"
@@ -2110,7 +2148,7 @@ export default function Main({ refs }) {
                                             Gallery
                                         </h3>
                                         <img
-                                            src="./src/assets/down.svg"
+                                            src={Down}
                                             alt=""
                                             width="20px"
                                             className="close"
@@ -2126,7 +2164,7 @@ export default function Main({ refs }) {
                                 >
                                     <div className="flex justify-center flex-wrap">
                                         <img
-                                            src="./src/assets/katana_anime.webp"
+                                            src={Katana_Anime}
                                             alt="Human child Kokushibo"
                                             className="h-60 m-auto border-3 border-black"
                                         />
@@ -2137,7 +2175,7 @@ export default function Main({ refs }) {
                                     </div>
                                     <div className="flex justify-center flex-wrap">
                                         <img
-                                            src="./src/assets/katana_manga.webp"
+                                            src={Katana_Manga}
                                             alt="Human adult Kokushibo"
                                             className="h-60 m-auto border-3 border-black"
                                         />
@@ -2149,7 +2187,7 @@ export default function Main({ refs }) {
 
                                     <div className="flex justify-center flex-wrap">
                                         <img
-                                            src="./src/assets/katana_full.webp"
+                                            src={Katana_Full}
                                             alt="Anime full body Kokushibo"
                                             className="h-60 m-auto border-3 border-black"
                                         />
@@ -2160,7 +2198,7 @@ export default function Main({ refs }) {
 
                                     <div className="flex justify-center flex-wrap">
                                         <img
-                                            src="./src/assets/katana_og.webp"
+                                            src={Katana_Og}
                                             alt="Kokushibo with several blades coming out of his body"
                                             className="h-60 m-auto border-3 border-black"
                                         />
@@ -2183,7 +2221,7 @@ export default function Main({ refs }) {
                         <div className="flex justify-between">
                             <h2 className="text-xl font-comic">Relatives</h2>
                             <img
-                                src="./src/assets/down.svg"
+                                src={Down}
                                 alt=""
                                 width="20px"
                                 className="close"
@@ -2214,7 +2252,7 @@ export default function Main({ refs }) {
                         <div className="flex justify-between">
                             <h2 className="text-xl font-comic">Battles</h2>
                             <img
-                                src="./src/assets/down.svg"
+                                src={Down}
                                 alt=""
                                 width="20px"
                                 className="close"
@@ -2247,7 +2285,7 @@ export default function Main({ refs }) {
                         <div className="flex justify-between">
                             <h2 className="text-xl font-comic">Trivia</h2>
                             <img
-                                src="./src/assets/down.svg"
+                                src={Down}
                                 alt=""
                                 width="20px"
                                 className="close"
@@ -2368,7 +2406,7 @@ export default function Main({ refs }) {
                         <div className="flex justify-between">
                             <h2 className="text-xl font-comic">Quotes</h2>
                             <img
-                                src="./src/assets/down.svg"
+                                src={Down}
                                 alt=""
                                 width="20px"
                                 className="close"
