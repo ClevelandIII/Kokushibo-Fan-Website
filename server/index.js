@@ -30,6 +30,10 @@ const UserSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    date: {
+        type: Date,
+        default: Date.now
+    }
 });
 
 //mongoose.model("name of the mongoose file", Schema that you want to use)

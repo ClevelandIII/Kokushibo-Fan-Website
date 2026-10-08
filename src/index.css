@@ -12,7 +12,7 @@
     --color-koku-purple: #76418c;
     --color-koku-ptrans: #75418ce3;
     --color-koku-dark-purple: #371645;
-    --color-koku-dark-ptrans: #3716457e;
+    --color-koku-dark-ptrans: #371645d6;
     --color-koku-red: #de2220;
     --color-koku-middle-red: #b2414e;
     --color-koku-dark-red: #200b0d;
@@ -77,6 +77,10 @@ small {
     color: #200b0d;
 }
 
+#comment {
+    color: white;
+}
+
 thead tr th {
     border: #371645 solid 3px;
 }
@@ -91,4 +95,8 @@ h2 {
 
 li {
     padding: var(--spacing);
+}
+
+main aside {
+    height: 61vh;
 }

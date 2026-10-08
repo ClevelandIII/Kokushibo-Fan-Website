@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import Profile from "../src/assets/profile.png";
 
-export default function Comments() {
+export default function Comments({ refs }) {
     const [name, setName] = useState("");
     const [text, setText] = useState("");
 
@@ -46,59 +47,88 @@ export default function Comments() {
         }
     };
 
+    function getDate(date) {
+        let months = [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December",
+        ];
+
+        let year = date.substring(0, 4);
+        let month = date.substring(5, 7);
+        let day = date.substring(8, 10);
+
+        month = months[month - 1];
+        return `${month} ${day}, ${year}`;
+    }
+
     return (
         <>
-            <div className="w-10/12 m-auto flex gap-6 pt-6">
-                <section className="bg-koku-ptrans border-3 border-black w-4/5 p-5 grid grid-cols-1 gap-2">
-                    <h2 className="text-xl font-comic">
-                        {comments.length} Comments
-                    </h2>
-                    <hr className=" border-2 text-black" />
-                    <form action="">
-                        <div className="bg-koku-dark-purple border-3 p-5 text-white border-black grid grid-cols-1 gap-2">
-                            <label htmlFor="name">Username</label>
-                            <input
-                                type="text"
-                                placeholder="Enter username..."
-                                value={name}
-                                onChange={(e) => setName(e.target.value)}
-                                className=""
-                            />
+            <section
+                className="w-full col-span-9 bg-koku-ptrans border-3 border-black w-4/5 p-5 grid grid-cols-1 gap-2"
+                ref={refs.Comment}
+            >
+                <h2 className="text-xl font-comic">
+                    {comments.length} Comments
+                </h2>
+                <hr className=" border-2 text-black" />
+                <form action="" className="mb-6">
+                    <div className="bg-koku-dark-ptrans border-3 p-5 text-white border-black grid grid-cols-1 gap-2">
+                        <label htmlFor="name" className="text-l">Username</label>
+                        <input
+                            type="text"
+                            placeholder="Enter username..."
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
+                            className="border-black border-3 bg-koku-ptrans p-1"
+                        />
 
-                            <label htmlFor="text">
-                                What do you want to say?
-                            </label>
-                            <textarea
-                                type="text"
-                                placeholder="Enter comment..."
-                                value={text}
-                                onChange={(e) => setText(e.target.value)}
-                            ></textarea>
+                        <label htmlFor="text" className="text-l">What do you want to say?</label>
+                        <textarea
+                            type="text"
+                            placeholder="Enter comment..."
+                            value={text}
+                            onChange={(e) => setText(e.target.value)}
+                            className="border-black border-3 bg-koku-ptrans p-1 h-40"
+                        ></textarea>
 
-                            <button
-                                type="submit"
-                                onClick={handleOnSubmit}
-                                className="border-black bg-koku-ptrans border-3 w-1/12 m-auto"
-                            >
-                                Post
-                            </button>
-                        </div>
-                    </form>
-
-                    {comments.map((comment) => (
-                        <div
-                            className="bg-koku-dark-purple border-3 p-5 text-white border-black grid grid-cols-1 gap-2"
-                            key={comment._id}
+                        <button
+                            type="submit"
+                            onClick={handleOnSubmit}
+                            className="border-black bg-koku-ptrans border-3 w-1/12 m-auto cursor-pointer"
                         >
+                            Post
+                        </button>
+                    </div>
+                </form>
+
+                {comments.map((comment) => (
+                    <div
+                        className="bg-koku-dark-ptrans border-3 p-5 text-white border-black grid grid-cols-10 gap-6"
+                        key={comment._id}
+                    >
+                        <img src={Profile} alt="" className="w-20 col-span-1" />
+                        <div className="col-span-7 grid grid-cols-1 gap-2">
                             <h3 className="text-lg font-comic">
                                 {comment.name}
                             </h3>
                             <p>{comment.text}</p>
                         </div>
-                    ))}
-                </section>
-                <section className="w-1/5"></section>
-            </div>
+                        <small className="col-span-2" id="comment">
+                            Date Posted: {getDate(comment.date)}
+                        </small>
+                    </div>
+                ))}
+            </section>
         </>
     );
 }

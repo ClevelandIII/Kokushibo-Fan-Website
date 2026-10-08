@@ -92,7 +92,7 @@ export default function Main({ refs }) {
 
     return (
         <>
-            <main className="border-black border-3 bg-koku-ptrans m-auto p-5 text-white grid grid-cols-1 gap-10 w-4/5">
+            <main className="col-span-9 w-full border-black border-3 bg-koku-ptrans m-auto p-5 text-white grid grid-cols-1 gap-10 w-4/5">
                 {/* Image and Main Description Section */}
                 <section className="grid grid-cols-2 gap-x-2 mt-5">
                     <div className="w-4/5 m-auto">

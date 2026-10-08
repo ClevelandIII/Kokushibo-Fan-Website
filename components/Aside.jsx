@@ -50,9 +50,13 @@ export default function Aside({ refs, scrollToSection }) {
                     </a>
                 </li>
                 <li className="p-1">
-
                     <a onClick={() => scrollToSection(refs.Quotes)}>
                         <span className="text-koku-yellow">10.</span> Quotes
+                    </a>
+                </li>
+                <li className="p-1">
+                    <a onClick={() => scrollToSection(refs.Comment)}>
+                        <span className="text-koku-yellow">11.</span> Comments
                     </a>
                 </li>
             </ol>
