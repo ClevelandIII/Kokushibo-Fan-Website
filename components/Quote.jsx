@@ -2,7 +2,7 @@ export default function Quote() {
     return (
         <>
             {/* Quote Section */}
-            <aside className="w-6/12 m-auto text-white mb-6 bg-koku-ptrans p-6">
+            <aside className="w-full mt-6 lg:mt-0 sm:w-10/12 lg:w-6/12 m-auto text-white mb-6 bg-koku-ptrans p-6">
                 <p>
                     "I will stop your bleeding. Humans are so fragile.
                     However... if you bleed to death... or if his lordship
@@ -17,4 +17,4 @@ export default function Quote() {
             </aside>
         </>
     );
-}
+} 
