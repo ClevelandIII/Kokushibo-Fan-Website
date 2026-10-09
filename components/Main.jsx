@@ -92,9 +92,9 @@ export default function Main({ refs }) {
 
     return (
         <>
-            <main className="col-span-9 w-full border-black border-3 bg-koku-ptrans m-auto p-5 text-white grid grid-cols-1 gap-10 w-4/5">
+            <main className="col-span-12 lg:col-span-9 w-full border-black border-3 bg-koku-ptrans m-auto p-5 text-white grid grid-cols-1 gap-10 w-4/5">
                 {/* Image and Main Description Section */}
-                <section className="grid grid-cols-2 gap-x-2 mt-5">
+                <section className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-y-0 gap-x-2 mt-5">
                     <div className="w-4/5 m-auto">
                         <div className="grid grid-cols-1">
                             <p className="bg-black text-white text-center text-lg font-comic">
@@ -147,7 +147,7 @@ export default function Main({ refs }) {
                     </div>
                 </section>
                 {/* Table Section */}
-                <section className="grid grid-cols-1 gap-y-2">
+                <section className="hidden sm:grid grid-cols-1 gap-y-2">
                     <table>
                         <thead className="text-center bg-black text-lg">
                             <tr>
@@ -226,6 +226,199 @@ export default function Main({ refs }) {
                                     <p>&lt; 480 (Chronologically)</p>
                                 </td>
                                 <td>190 cm (6'3")</td>
+                                <td>93 kg (205 lb)</td>
+                                <td>Black with Red Tips</td>
+                                <td>
+                                    <p>Maroon (Human)</p>
+                                    <p>Gold with Red Sclera (Demon)</p>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                    <table>
+                        <thead
+                            className="text-center bg-black text-lg"
+                            id="header"
+                        >
+                            <tr>
+                                <th colSpan={2}>Debuts</th>
+                                <th colSpan={3}>Portrayal</th>
+                            </tr>
+                        </thead>
+                        <tbody className="bg-koku-dark-purple" id="header-2">
+                            <tr>
+                                <td>Manga Debut</td>
+                                <td>Anime Debut</td>
+                                <td>Japanese VA</td>
+                                <td>English VA</td>
+                                <td>Stage Play</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>
+                                    <p>Chapter 98 (Partial Appearance)</p>
+                                    <p>Chapter 99 (Full Appearance)</p>
+                                </td>
+                                <td>Episode 45</td>
+                                <td>Ryōtarō Okiayu</td>
+                                <td>Jonah Scott</td>
+                                <td>Kazuki Kato</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                    <table>
+                        <thead
+                            className="text-center bg-black text-lg"
+                            id="header"
+                        >
+                            <tr>
+                                <th colSpan={2}>Personal Status</th>
+                            </tr>
+                        </thead>
+                        <tbody className="bg-koku-dark-purple" id="header-2">
+                            <tr>
+                                <td>Status</td>
+                                <td>Relatives</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Deceased</td>
+                                <td>
+                                    <p>Unnamed Father</p>
+                                    <p>Akeno Tsugikuni (Mother)</p>
+                                    <p>
+                                        Yoriichi Tsugikuni (Younger Twin
+                                        Brother)
+                                    </p>
+                                    <p>Unnamed Wife</p>
+                                    <p>Two Unnamed Children</p>
+                                    <p>Muichiro Tokito (Descendant)</p>
+                                    <p>Yuichiro Tokito (Descendant)</p>
+                                    <p>Uta (Sister-in-Law)</p>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </section>
+                <section className="sm:hidden grid grid-cols-1 gap-y-2">
+                    <table>
+                        <thead className="text-center bg-black text-lg">
+                            <tr>
+                                <th colSpan={4}>Names</th>
+                            </tr>
+                        </thead>
+                        <tbody className="bg-koku-dark-purple" id="header-2">
+                            <tr>
+                                <td>Kanji</td>
+                                <td>Rōmaji</td>
+                                <td>Alias</td>
+                                <td>Race</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>
+                                    <p>黒死牟 (Demon)</p>
+                                    <p>継国 巌勝 (Human)</p>
+                                </td>
+                                <td>Kokushibō</td>
+                                <td>
+                                    <p>Michikatsu Tsugikuni (Human Name)</p>
+                                    <p>Secretary Kokushibo (Kimetsu Academy)</p>
+                                </td>
+                                <td>
+                                    <p>Demon</p>
+                                    <p>Human (Formerly)</p>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <table>
+                        <thead className="text-center bg-black text-lg">
+                            <tr>
+
+                                <th colSpan={3}>Affiliation</th>
+                            </tr>
+                        </thead>
+                        <tbody className="bg-koku-dark-purple" id="header-2">
+                            <tr>
+
+                                <td>Affiliation</td>
+                                <td>Occupation</td>
+                                <td>Combat Style</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>
+                                    <p>Demon Slayer Corps (Formerly)</p>
+                                    <p>Twelve Kizuki</p>
+                                </td>
+                                <td>
+                                    <p>Samurai (Formerly)</p>
+                                    <p>Demon Slayer (Formerly)</p>
+                                </td>
+                                <td>Moon Breathing</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                    <table>
+                        <thead
+                            className="text-center bg-black text-lg"
+                            id="header"
+                        >
+                            <tr>
+                                <th colSpan={4}>Characteristics</th>
+                            </tr>
+                        </thead>
+                        <tbody className="bg-koku-dark-purple" id="header-2">
+                            <tr>
+                                <td>Race</td>
+                                <td>Gender</td>
+                                <td>Age</td>
+                                <td>Height</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>
+                                    <p>Demon</p>
+                                    <p>Human (Formerly)</p>
+                                </td>
+                                <td>Male</td>
+                                <td>
+                                    <p>17-24 (Human)</p>
+                                    <p>&lt; 480 (Chronologically)</p>
+                                </td>
+                                <td>190 cm (6'3")</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                    
+                    <table>
+                        <thead
+                            className="text-center bg-black text-lg"
+                            id="header"
+                        >
+                            <tr>
+                                <th colSpan={3}>Characteristics</th>
+                            </tr>
+                        </thead>
+                        <tbody className="bg-koku-dark-purple" id="header-2">
+                            <tr>
+                                <td>Weight</td>
+                                <td>Hair Color</td>
+                                <td>Eye Color</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
                                 <td>93 kg (205 lb)</td>
                                 <td>Black with Red Tips</td>
                                 <td>
@@ -422,7 +615,7 @@ export default function Main({ refs }) {
                             <img
                                 src={Human_Koku}
                                 alt="Human child Kokushibo"
-                                className="h-60 m-auto border-3 border-black"
+                                className="h-40 sm:h-50 md:h-60 m-auto border-3 border-black"
                             />
                             <small className="m-auto mt-0">
                                 Kokushibo's appearance as a human child.
@@ -432,7 +625,7 @@ export default function Main({ refs }) {
                             <img
                                 src={Human_Adult_Koku}
                                 alt="Human adult Kokushibo"
-                                className="h-60 m-auto border-3 border-black"
+                                className="h-40 sm:h-50 md:h-60 m-auto border-3 border-black"
                             />
                             <small className="m-auto">
                                 Kokushibo's appearance with his Demon Slayer
@@ -444,7 +637,7 @@ export default function Main({ refs }) {
                             <img
                                 src={Koku_Anime_Full}
                                 alt="Anime full body Kokushibo"
-                                className="h-60 m-auto border-3 border-black"
+                                className="h-40 sm:h-50 md:h-60 m-auto border-3 border-black"
                             />
                             <small className="flex justify-center flex-wrap">
                                 Kokushibo's full appearance as a demon.
@@ -455,7 +648,7 @@ export default function Main({ refs }) {
                             <img
                                 src={Koku_Blades}
                                 alt="Kokushibo with several blades coming out of his body"
-                                className="h-60 m-auto border-3 border-black"
+                                className="h-40 sm:h-50 md:h-60 m-auto border-3 border-black"
                             />
                             <small className="flex justify-center flex-wrap">
                                 Kokushibo's appearance with dozens of katanas
@@ -467,7 +660,7 @@ export default function Main({ refs }) {
                             <img
                                 src={Koku_Monster}
                                 alt="Kokushibo's monster form"
-                                className="h-60 m-auto border-3 border-black"
+                                className="h-40 sm:h-50 md:h-60 m-auto border-3 border-black"
                             />
                             <small className="flex justify-center flex-wrap">
                                 Kokushibo's appearance after undergoing a
@@ -1558,7 +1751,7 @@ export default function Main({ refs }) {
                                     </div>
                                     <p>
                                         {" "}
-                                        <strong>Master Swordsman: </strong>MDue
+                                        <strong>Master Swordsman: </strong>Due
                                         to training and refining his
                                         swordsmanship skills for almost 500
                                         years and getting a major boost to his
@@ -2166,7 +2359,7 @@ export default function Main({ refs }) {
                                         <img
                                             src={Katana_Anime}
                                             alt="Human child Kokushibo"
-                                            className="h-60 m-auto border-3 border-black"
+                                            className="h-40 sm:h-50 md:h-60 m-auto border-3 border-black"
                                         />
                                         <small className="m-auto mt-0">
                                             Kokushibo's katana as seen in the
@@ -2177,7 +2370,7 @@ export default function Main({ refs }) {
                                         <img
                                             src={Katana_Manga}
                                             alt="Human adult Kokushibo"
-                                            className="h-60 m-auto border-3 border-black"
+                                            className="h-40 sm:h-50 md:h-60 m-auto border-3 border-black"
                                         />
                                         <small className="m-auto">
                                             Kokushibo's katana as seen in the
@@ -2189,7 +2382,7 @@ export default function Main({ refs }) {
                                         <img
                                             src={Katana_Full}
                                             alt="Anime full body Kokushibo"
-                                            className="h-60 m-auto border-3 border-black"
+                                            className="h-40 sm:h-50 md:h-60 m-auto border-3 border-black"
                                         />
                                         <small className="flex justify-center flex-wrap">
                                             Kokushibo's full katana.
@@ -2200,7 +2393,7 @@ export default function Main({ refs }) {
                                         <img
                                             src={Katana_Og}
                                             alt="Kokushibo with several blades coming out of his body"
-                                            className="h-60 m-auto border-3 border-black"
+                                            className="h-40 sm:h-50 md:h-60 m-auto border-3 border-black"
                                         />
                                         <small className="flex justify-center flex-wrap">
                                             Kokushibo's original Nichirin

@@ -1,6 +1,6 @@
 export default function Aside({ refs, scrollToSection }) {
     return (
-        <aside className="col-span-3 w-full border-black border-3 bg-koku-ptrans p-6 text-white grid grid-cols-1 gap-2 w-1/5 h-full sticky top-6">
+        <aside className="hidden lg:block col-span-3 w-full border-black border-3 bg-koku-ptrans p-6 text-white grid grid-cols-1 gap-2 w-1/5 h-full sticky top-6">
             <h2 className="text-xl font-comic">Contents</h2>
             <hr className=" border-2 text-black" />
             <ol>

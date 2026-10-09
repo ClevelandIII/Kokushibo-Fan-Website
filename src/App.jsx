@@ -35,9 +35,25 @@ function App() {
 
     return (
         <>
-            <Header />
+            <Header
+                refs={{
+                    Appearance,
+                    Personality,
+                    Abilities,
+                    Fighting,
+                    Equipment,
+                    Relatives,
+                    Battles,
+                    Trivia,
+                    Gallery,
+                    Techniques,
+                    Quotes,
+                    Comment,
+                }}
+                scrollToSection={scrollToSection}
+            />
             <Quote />
-            <main className="w-10/12 m-auto grid grid-cols-12 gap-6">
+            <main className="w-full md:w-10/12 m-auto grid grid-cols-12 gap-6">
                 <Main
                     refs={{
                         Appearance,

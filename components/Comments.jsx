@@ -17,7 +17,18 @@ export default function Comments({ refs }) {
         axios
             .get(`${apiUrl}/register`)
             .then((response) => {
-                setComments(response.data);
+                const temp = response.data;
+                //console.log(temp);
+
+                let temp2 = [];
+                for (let i = 0; i < temp.length; i++) {
+                    //console.log(temp[i]);
+
+                    temp2[i] = temp[temp.length - 1 - i];
+                    //console.log(temp2 + " currently");
+                }
+                //console.log(temp2);
+                setComments(temp2);
                 //console.log(response);
             })
             .catch((error) => {
@@ -40,7 +51,6 @@ export default function Comments({ refs }) {
         console.warn(result);
 
         if (result) {
-            alert("Data saved successfully");
             setName("");
             setText("");
             setUpdateComments((prev) => (prev = false));
@@ -70,11 +80,11 @@ export default function Comments({ refs }) {
         month = months[month - 1];
         return `${month} ${day}, ${year}`;
     }
-
+    //console.log(comments);
     return (
         <>
             <section
-                className="w-full col-span-9 bg-koku-ptrans border-3 border-black w-4/5 p-5 grid grid-cols-1 gap-2"
+                className="w-full col-span-12 lg:col-span-9 bg-koku-ptrans border-3 border-black p-5 grid grid-cols-1 gap-2"
                 ref={refs.Comment}
             >
                 <h2 className="text-xl font-comic">
@@ -83,7 +93,9 @@ export default function Comments({ refs }) {
                 <hr className=" border-2 text-black" />
                 <form action="" className="mb-6">
                     <div className="bg-koku-dark-ptrans border-3 p-5 text-white border-black grid grid-cols-1 gap-2">
-                        <label htmlFor="name" className="text-l">Username</label>
+                        <label htmlFor="name" className="text-l">
+                            Username
+                        </label>
                         <input
                             type="text"
                             placeholder="Enter username..."
@@ -92,13 +104,15 @@ export default function Comments({ refs }) {
                             className="border-black border-3 bg-koku-ptrans p-1"
                         />
 
-                        <label htmlFor="text" className="text-l">What do you want to say?</label>
+                        <label htmlFor="text" className="text-l">
+                            What do you want to say?
+                        </label>
                         <textarea
                             type="text"
                             placeholder="Enter comment..."
                             value={text}
                             onChange={(e) => setText(e.target.value)}
-                            className="border-black border-3 bg-koku-ptrans p-1 h-40"
+                            className="border-black border-3 bg-koku-ptrans h-40 p-1 mb-3"
                         ></textarea>
 
                         <button
@@ -116,8 +130,12 @@ export default function Comments({ refs }) {
                         className="bg-koku-dark-ptrans border-3 p-5 text-white border-black grid grid-cols-10 gap-6"
                         key={comment._id}
                     >
-                        <img src={Profile} alt="" className="w-20 col-span-1" />
-                        <div className="col-span-7 grid grid-cols-1 gap-2">
+                        <img
+                            src={Profile}
+                            alt=""
+                            className="w-20 col-span-2 sm:col-span-1"
+                        />
+                        <div className="col-span-6 sm:col-span-7 grid grid-cols-1 gap-2">
                             <h3 className="text-lg font-comic">
                                 {comment.name}
                             </h3>
